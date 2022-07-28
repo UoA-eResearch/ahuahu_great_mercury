@@ -62,7 +62,7 @@ Don't forget to note down the password you set somewhere! Then set up MySQL:
 ```
 $ sudo mysql -u root
 
-USE mysql;
+CREATE DATABASE my_archive;
 CREATE USER gmdb@localhost identified by 'my_password';
 GRANT ALL on my_archive.* to gmdb@localhost;
 exit;
@@ -81,7 +81,7 @@ Edit the `setup.php` file (nano) to set up the following Collective Access setti
 ```
 define("__CA_DB_USER__", "gmdb");
 define("__CA_DB_PASSWORD__", "my_password");
-define("__CA_DB_DATABASE__", "mysql");
+define("__CA_DB_DATABASE__", "my_archive");
 define("__CA_STACKTRACE_ON_EXCEPTION__",true);
 define("__CA_APP_DISPLAY_NAME__","Great Mercury Collective Access");
 date_default_timezone_set('Pacific/Auckland');
