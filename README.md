@@ -13,6 +13,7 @@ This directory houses instructions on how to:
 
 * install and set up a working Collective Access instance
 * perform an in-place update to Collective Access
+* update the profile used by Collective Access
 
 ## Profiles
 
