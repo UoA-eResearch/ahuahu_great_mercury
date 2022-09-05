@@ -4,7 +4,6 @@
   <profileDescription>A really quick basic test profile</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
-    <locale lang="fr" country="FR">Français</locale>
   </locales>
   <lists>
     <list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
