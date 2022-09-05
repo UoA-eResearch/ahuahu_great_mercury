@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="http://providence.collectiveaccess.org/wiki/DefaultProfile">
   <profileName>[MIKETEST] Mike's test profile</profileName>
-  <profileDescription>Profile for art gallery, art collection, or any type of visual resources collection</profileDescription>
+  <profileDescription>A really quick basic test profile</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="fr" country="FR">Français</locale>
@@ -12,9 +12,6 @@
         <label locale="en_US">
           <name>Art &amp;amp; Architecture Thesaurus</name>
         </label>
-        <label locale="fr_FR">
-          <name>Thésaurus Art &amp;amp; Architecture</name>
-        </label>
       </labels>
       <items/>
     </list>
@@ -22,9 +19,6 @@
       <labels>
         <label locale="en_US">
           <name>Object sources</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Sources d\'objet</name>
         </label>
       </labels>
       <items>
@@ -34,10 +28,6 @@
               <name_singular>Permanent Collection</name_singular>
               <name_plural>Permanent Collections</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Collection permanente</name_singular>
-              <name_plural>Collections permanentes</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="temporary" enabled="1" default="1">
@@ -45,10 +35,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Temporary Collection</name_singular>
               <name_plural>Temporary Collections</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Collection temporaire</name_singular>
-              <name_plural>Collections temporaires</name_plural>
             </label>
           </labels>
         </item>
@@ -58,10 +44,6 @@
               <name_singular>Study Collection</name_singular>
               <name_plural>Study Collections</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Collection d\'étude</name_singular>
-              <name_plural>Collections d\'étude</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="external" enabled="1" default="1">
@@ -69,10 +51,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>External Collection</name_singular>
               <name_plural>External Collections</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Collection externe</name_singular>
-              <name_plural>Collections externes</name_plural>
             </label>
           </labels>
         </item>
@@ -83,18 +61,11 @@
         <label locale="en_US">
           <name>Object types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="document" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>Document</name_singular>
               <name_plural>Documents</name_plural>
             </label>
@@ -106,10 +77,6 @@
               <name_singular>Drawing</name_singular>
               <name_plural>Drawings</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Dessin</name_singular>
-              <name_plural>Dessins</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="film_media" enabled="1" default="1">
@@ -117,10 +84,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Film &amp; Media</name_singular>
               <name_plural>Film &amp; Media</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Film &amp; Média</name_singular>
-              <name_plural>Film &amp; Média</name_plural>
             </label>
           </labels>
         </item>
@@ -130,10 +93,6 @@
               <name_singular>Painting</name_singular>
               <name_plural>Paintings</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Peinture</name_singular>
-              <name_plural>Peintures</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="photography" enabled="1" default="1">
@@ -141,10 +100,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Photography</name_singular>
               <name_plural>Photography</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Photographie</name_singular>
-              <name_plural>Photographies</name_plural>
             </label>
           </labels>
         </item>
@@ -154,19 +109,11 @@
               <name_singular>Print</name_singular>
               <name_plural>Prints</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Imprimé</name_singular>
-              <name_plural>Imprimés</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="sculpture" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>Sculpture</name_singular>
               <name_plural>Sculptures</name_plural>
             </label>
@@ -179,9 +126,6 @@
         <label locale="en_US">
           <name>Object status values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Valeurs de statut d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="pending_accession" enabled="1" default="1">
@@ -189,10 +133,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accessions</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>acquisition en cours</name_singular>
-              <name_plural>acquisitions en cours</name_plural>
             </label>
           </labels>
         </item>
@@ -202,10 +142,6 @@
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>acquis</name_singular>
-              <name_plural>acquis</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="loan" enabled="1" default="0">
@@ -213,10 +149,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>prêt</name_singular>
-              <name_plural>prêts</name_plural>
             </label>
           </labels>
         </item>
@@ -226,10 +158,6 @@
               <name_singular>non-accessioned</name_singular>
               <name_plural>non-accessioned</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>non acquis</name_singular>
-              <name_plural>non acquis</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="potential" enabled="1" default="0">
@@ -237,10 +165,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>acquisition possible</name_singular>
-              <name_plural>acquisitions possibles</name_plural>
             </label>
           </labels>
         </item>
@@ -251,9 +175,6 @@
         <label locale="en_US">
           <name>Object acquisition types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types d\'acquisition d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="gift" enabled="1" default="1">
@@ -261,10 +182,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>gift</name_singular>
               <name_plural>gifts</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>don</name_singular>
-              <name_plural>dons</name_plural>
             </label>
           </labels>
         </item>
@@ -274,10 +191,6 @@
               <name_singular>bequest</name_singular>
               <name_plural>bequests</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>leg</name_singular>
-              <name_plural>legs</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="purchase" enabled="1" default="0">
@@ -285,10 +198,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>purchase</name_singular>
               <name_plural>purchases</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>achat</name_singular>
-              <name_plural>achats</name_plural>
             </label>
           </labels>
         </item>
@@ -299,9 +208,6 @@
         <label locale="en_US">
           <name>Object label type values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Valeurs de types de libellé objet</name>
-        </label>
       </labels>
       <items>
         <item idno="alt" enabled="1" default="1">
@@ -310,10 +216,6 @@
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>alternatif</name_singular>
-              <name_plural>alternatifs</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="uf" enabled="1" default="0">
@@ -321,10 +223,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>utiliser pour</name_singular>
-              <name_plural>utiliser pour</name_plural>
             </label>
           </labels>
         </item>
@@ -335,18 +233,11 @@
         <label locale="en_US">
           <name>Object lot types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types de lot d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="donation" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>donation</name_singular>
-              <name_plural>donations</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>donation</name_singular>
               <name_plural>donations</name_plural>
             </label>
@@ -358,10 +249,6 @@
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>prêt</name_singular>
-              <name_plural>prêts</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="purchase" enabled="1" default="0">
@@ -370,10 +257,6 @@
               <name_singular>purchase</name_singular>
               <name_plural>purchases</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>achat</name_singular>
-              <name_plural>achats</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="promise" enabled="1" default="0">
@@ -381,10 +264,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>promised gift</name_singular>
               <name_plural>promised gifts</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>objet promis</name_singular>
-              <name_plural>objets promis</name_plural>
             </label>
           </labels>
         </item>
@@ -395,9 +274,6 @@
         <label locale="en_US">
           <name>Object lot status values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Valeurs de statuts pour le lot d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="pending_accession" enabled="1" default="1">
@@ -405,10 +281,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>pending accession</name_singular>
               <name_plural>pending accessions</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>acquisition en cours</name_singular>
-              <name_plural>acquisitions en cours</name_plural>
             </label>
           </labels>
         </item>
@@ -418,10 +290,6 @@
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>répertorié</name_singular>
-              <name_plural>répertoriés</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="loan" enabled="1" default="0">
@@ -429,10 +297,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>loan</name_singular>
               <name_plural>loans</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>prêt</name_singular>
-              <name_plural>prêts</name_plural>
             </label>
           </labels>
         </item>
@@ -442,10 +306,6 @@
               <name_singular>non-accessioned</name_singular>
               <name_plural>non-accessioned</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>non acquis</name_singular>
-              <name_plural>non acquis</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="potential" enabled="1" default="0">
@@ -454,10 +314,6 @@
               <name_singular>potential acquisition</name_singular>
               <name_plural>potential acquisitions</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>acquisition potentielle</name_singular>
-              <name_plural>acquisitions potentielles</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="deaccessioned" enabled="1" default="0">
@@ -465,10 +321,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>deaccessioned</name_singular>
               <name_plural>deaccessioned</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>sorti de l\'inventaire</name_singular>
-              <name_plural>sortis de l\'inventaire</name_plural>
             </label>
           </labels>
         </item>
@@ -479,9 +331,6 @@
         <label locale="en_US">
           <name>Object lot label type values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Valeurs de type de libellé pour les lots d\'objets</name>
-        </label>
       </labels>
       <items>
         <item idno="alt" enabled="1" default="1">
@@ -490,10 +339,6 @@
               <name_singular>Alternate</name_singular>
               <name_plural>Alternates</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Alternatif</name_singular>
-              <name_plural>Alternatifs</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="uf" enabled="1" default="0">
@@ -501,10 +346,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>utiliser pour</name_singular>
-              <name_plural>utiliser pour</name_plural>
             </label>
           </labels>
         </item>
@@ -515,9 +356,6 @@
         <label locale="en_US">
           <name>Place hierarchies</name>
         </label>
-        <label locale="fr_FR">
-          <name>Hiérarchies des lieux</name>
-        </label>
       </labels>
       <items>
         <item idno="places" enabled="1" default="1">
@@ -525,10 +363,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Place Authority</name_singular>
               <name_plural>Place Authority</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Autorité lieu</name_singular>
-              <name_plural>Autorités lieux</name_plural>
             </label>
           </labels>
         </item>
@@ -539,9 +373,6 @@
         <label locale="en_US">
           <name>Place sources</name>
         </label>
-        <label locale="fr_FR">
-          <name>Sources de lieux</name>
-        </label>
       </labels>
       <items>
         <item idno="places" enabled="1" default="1">
@@ -549,10 +380,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Place Authority</name_singular>
               <name_plural>Place Authority</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Autorité lieu</name_singular>
-              <name_plural>Autorités lieux</name_plural>
             </label>
           </labels>
         </item>
@@ -563,9 +390,6 @@
         <label locale="en_US">
           <name>Entity types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types d\'entités</name>
-        </label>
       </labels>
       <items>
         <item idno="individual" enabled="1" default="1">
@@ -574,10 +398,6 @@
               <name_singular>individual</name_singular>
               <name_plural>individuals</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>personne physique</name_singular>
-              <name_plural>personnes physiques</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="organization" enabled="1" default="0">
@@ -585,10 +405,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>organization</name_singular>
               <name_plural>organizations</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>organisation</name_singular>
-              <name_plural>organisations</name_plural>
             </label>
           </labels>
         </item>
@@ -599,9 +415,6 @@
         <label locale="en_US">
           <name>Entity label type values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Valeurs de type de libellés d\'entité</name>
-        </label>
       </labels>
       <items>
         <item idno="alt" enabled="1" default="1">
@@ -610,10 +423,6 @@
               <name_singular>alternate</name_singular>
               <name_plural>alternates</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>alternatif</name_singular>
-              <name_plural>alternatifs</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="uf" enabled="1" default="0">
@@ -621,10 +430,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>use for</name_singular>
               <name_plural>use for</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>utiliser pour</name_singular>
-              <name_plural>utiliser pour</name_plural>
             </label>
           </labels>
         </item>
@@ -635,9 +440,6 @@
         <label locale="en_US">
           <name>Entity sources</name>
         </label>
-        <label locale="fr_FR">
-          <name>Sources d\'entités</name>
-        </label>
       </labels>
       <items>
         <item idno="i1" enabled="1" default="1">
@@ -645,10 +447,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Entity Sources</name_singular>
               <name_plural>Entity Sources</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Source d\'entité</name_singular>
-              <name_plural>Sources d\'entités</name_plural>
             </label>
           </labels>
         </item>
@@ -659,9 +457,6 @@
         <label locale="en_US">
           <name>Collection types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types de collections</name>
-        </label>
       </labels>
       <items>
         <item idno="internal" enabled="1" default="1">
@@ -670,10 +465,6 @@
               <name_singular>Internal</name_singular>
               <name_plural>Internal</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Interne</name_singular>
-              <name_plural>Interne</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="external" enabled="1" default="1">
@@ -681,10 +472,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>External</name_singular>
               <name_plural>External</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Externe</name_singular>
-              <name_plural>Externes</name_plural>
             </label>
           </labels>
         </item>
@@ -695,9 +482,6 @@
         <label locale="en_US">
           <name>Collection sources</name>
         </label>
-        <label locale="fr_FR">
-          <name>Sources de collection</name>
-        </label>
       </labels>
       <items>
         <item idno="i1" enabled="1" default="1">
@@ -705,10 +489,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Collection Sources</name_singular>
               <name_plural>Collection Sources</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Source de collection</name_singular>
-              <name_plural>Sources de collections</name_plural>
             </label>
           </labels>
         </item>
@@ -719,9 +499,6 @@
         <label locale="en_US">
           <name>Occurrence types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types d\'occurence</name>
-        </label>
       </labels>
       <items>
         <item idno="exhibitions" enabled="1" default="1">
@@ -729,10 +506,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>exhibition</name_singular>
               <name_plural>exhibitions</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>exposition</name_singular>
-              <name_plural>exposition</name_plural>
             </label>
           </labels>
         </item>
@@ -742,19 +515,11 @@
               <name_singular>public program</name_singular>
               <name_plural>public program</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>programme public</name_singular>
-              <name_plural>programme public</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="publication" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>publication</name_singular>
-              <name_plural>publications</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>publication</name_singular>
               <name_plural>publications</name_plural>
             </label>
@@ -767,9 +532,6 @@
         <label locale="en_US">
           <name>Occurrence sources</name>
         </label>
-        <label locale="fr_FR">
-          <name>Sources d\'occurence</name>
-        </label>
       </labels>
       <items>
         <item idno="i1" enabled="1" default="1">
@@ -777,10 +539,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Occurrence Source</name_singular>
               <name_plural>Occurrence Source</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Source d\'occurrence</name_singular>
-              <name_plural>Sources d\'occurence</name_plural>
             </label>
           </labels>
         </item>
@@ -791,9 +549,6 @@
         <label locale="en_US">
           <name>Storage location types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types de localisation</name>
-        </label>
       </labels>
       <items>
         <item idno="campus" enabled="1" default="1">
@@ -801,10 +556,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>campuses</name_singular>
               <name_plural>campuses</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>campus</name_singular>
-              <name_plural>campus</name_plural>
             </label>
           </labels>
         </item>
@@ -814,10 +565,6 @@
               <name_singular>building</name_singular>
               <name_plural>buildings</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>bâtiment</name_singular>
-              <name_plural>bâtiments</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="floor" enabled="1" default="0">
@@ -825,10 +572,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>floor</name_singular>
               <name_plural>floors</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>étage</name_singular>
-              <name_plural>étages</name_plural>
             </label>
           </labels>
         </item>
@@ -838,10 +581,6 @@
               <name_singular>room</name_singular>
               <name_plural>rooms</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>salle</name_singular>
-              <name_plural>salle</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="cabinet" enabled="1" default="0">
@@ -850,10 +589,6 @@
               <name_singular>cabinet</name_singular>
               <name_plural>cabinets</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>armoire</name_singular>
-              <name_plural>armoires</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="drawer" enabled="1" default="0">
@@ -861,10 +596,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>drawer</name_singular>
               <name_plural>drawer</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>étagère</name_singular>
-              <name_plural>étagères</name_plural>
             </label>
           </labels>
         </item>
@@ -875,9 +606,6 @@
         <label locale="en_US">
           <name>Dimension types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types de dimension</name>
-        </label>
       </labels>
       <items>
         <item idno="overall_dimensions" enabled="1" default="1">
@@ -886,10 +614,6 @@
               <name_singular>Overall dimensions</name_singular>
               <name_plural>Overall dimensions</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Dimension totale</name_singular>
-              <name_plural>Dimensions totales</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="shipping_dimensions" enabled="1" default="0">
@@ -897,10 +621,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Shipping dimensions</name_singular>
               <name_plural>Shipping dimensions</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Dimension pour expédition</name_singular>
-              <name_plural>Dimensions pour expédition</name_plural>
             </label>
           </labels>
         </item>
@@ -911,9 +631,6 @@
         <label locale="en_US">
           <name>Alternate Publication Number Types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Autres types de numérotations de publication</name>
-        </label>
       </labels>
       <items>
         <item idno="issn" enabled="1" default="1">
@@ -922,19 +639,11 @@
               <name_singular>ISSN</name_singular>
               <name_plural>ISSN</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>ISSN</name_singular>
-              <name_plural>ISSN</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="isbn" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>ISBN</name_singular>
-              <name_plural>ISBN</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>ISBN</name_singular>
               <name_plural>ISBN</name_plural>
             </label>
@@ -947,18 +656,11 @@
         <label locale="en_US">
           <name>Condition values</name>
         </label>
-        <label locale="fr_FR">
-          <name>Etat de conservation</name>
-        </label>
       </labels>
       <items>
         <item idno="excellent" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>excellent</name_singular>
-              <name_plural>excellent</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
               <name_singular>excellent</name_singular>
               <name_plural>excellent</name_plural>
             </label>
@@ -970,10 +672,6 @@
               <name_singular>good</name_singular>
               <name_plural>good</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>bon</name_singular>
-              <name_plural>bon</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="fair" enabled="1" default="0">
@@ -982,10 +680,6 @@
               <name_singular>fair</name_singular>
               <name_plural>fair</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>assez bon</name_singular>
-              <name_plural>assez bon</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="poor" enabled="1" default="0">
@@ -993,10 +687,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>poor</name_singular>
               <name_plural>poor</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>mauvais</name_singular>
-              <name_plural>mauvais</name_plural>
             </label>
           </labels>
         </item>
@@ -1007,9 +697,6 @@
         <label locale="en_US">
           <name>Color type</name>
         </label>
-        <label locale="fr_FR">
-          <name>Couleur</name>
-        </label>
       </labels>
       <items>
         <item idno="bw" enabled="1" default="1">
@@ -1017,10 +704,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>black and white</name_singular>
               <name_plural>black and white</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>noir et blanc</name_singular>
-              <name_plural>noir et blanc</name_plural>
             </label>
           </labels>
         </item>
@@ -1030,10 +713,6 @@
               <name_singular>color</name_singular>
               <name_plural>color</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>couleur</name_singular>
-              <name_plural>couleur</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="null" enabled="1" default="0">
@@ -1041,10 +720,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>null</name_singular>
               <name_plural>null</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>non concerné</name_singular>
-              <name_plural>non concerné</name_plural>
             </label>
           </labels>
         </item>
@@ -1055,9 +730,6 @@
         <label locale="en_US">
           <name>Address type</name>
         </label>
-        <label locale="fr_FR">
-          <name>Type d\'adresse</name>
-        </label>
       </labels>
       <items>
         <item idno="home" enabled="1" default="1">
@@ -1065,10 +737,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>home</name_singular>
               <name_plural>home</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>domicile</name_singular>
-              <name_plural>domicile</name_plural>
             </label>
           </labels>
         </item>
@@ -1078,10 +746,6 @@
               <name_singular>work</name_singular>
               <name_plural>work</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>travail</name_singular>
-              <name_plural>travail</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="other" enabled="1" default="0">
@@ -1089,10 +753,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>other</name_singular>
               <name_plural>other</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>autre</name_singular>
-              <name_plural>autres</name_plural>
             </label>
           </labels>
         </item>
@@ -1103,9 +763,6 @@
         <label locale="en_US">
           <name>Date types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Types de dates</name>
-        </label>
       </labels>
       <items>
         <item idno="created" enabled="1" default="1">
@@ -1113,10 +770,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>created</name_singular>
               <name_plural>created</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>créé</name_singular>
-              <name_plural>créés</name_plural>
             </label>
           </labels>
         </item>
@@ -1126,10 +779,6 @@
               <name_singular>published</name_singular>
               <name_plural>published</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>publié</name_singular>
-              <name_plural>publiés</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="exhibited" enabled="1" default="0">
@@ -1137,10 +786,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>exhibited</name_singular>
               <name_plural>exhibited</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>exposé</name_singular>
-              <name_plural>exposés</name_plural>
             </label>
           </labels>
         </item>
@@ -1150,10 +795,6 @@
               <name_singular>organized</name_singular>
               <name_plural>organized</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>organisé</name_singular>
-              <name_plural>organisés</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="edited" enabled="1" default="0">
@@ -1161,10 +802,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>edited</name_singular>
               <name_plural>edited</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>modifié</name_singular>
-              <name_plural>modifiés</name_plural>
             </label>
           </labels>
         </item>
@@ -1174,10 +811,6 @@
               <name_singular>reviewed</name_singular>
               <name_plural>reviewed</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>examiné</name_singular>
-              <name_plural>examinés</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="valid" enabled="1" default="0">
@@ -1185,10 +818,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>valid</name_singular>
               <name_plural>valid</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>validé</name_singular>
-              <name_plural>validés</name_plural>
             </label>
           </labels>
         </item>
@@ -1198,10 +827,6 @@
               <name_singular>available</name_singular>
               <name_plural>available</name_plural>
             </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>disponible</name_singular>
-              <name_plural>disponibles</name_plural>
-            </label>
           </labels>
         </item>
         <item idno="issued" enabled="1" default="0">
@@ -1209,10 +834,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>issued</name_singular>
               <name_plural>issued</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>paru</name_singular>
-              <name_plural>parus</name_plural>
             </label>
           </labels>
         </item>
@@ -1223,9 +844,6 @@
         <label locale="en_US">
           <name>Object media license types</name>
         </label>
-        <label locale="fr_FR">
-          <name>Type de licence des médias objet</name>
-        </label>
       </labels>
       <items>
         <item idno="gvsu" enabled="1" default="1">
@@ -1233,10 +851,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Physical rights are retained by (your institution name here). Copyright is retained in accordance with U.S. Copyright laws.</name_singular>
               <name_plural>Physical rights are retained by (your institution name here). Copyright is retained in accordance with U.S. Copyright laws.</name_plural>
-            </label>
-            <label locale="fr_FR" preferred="1">
-              <name_singular>Les droits sont réservés par (le nom de votre institution). Droits de reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_singular>
-              <name_plural>Les droits sont réservés par (le nom de votre institution). Droits de reproduction réservés en accord avec les lois sur le Copyright des Etats-Unis.</name_plural>
             </label>
           </labels>
         </item>
@@ -1249,10 +863,6 @@
         <label locale="en_US">
           <name>Description</name>
           <description>Narrative description. This is the primary text used to document the item.</description>
-        </label>
-        <label locale="fr_FR">
-          <name>Description</name>
-          <description>Description narritive. C\'est le texte principal utilisé pour documenter l\'item.</description>
         </label>
       </labels>
       <settings>
@@ -1319,10 +929,6 @@
           <name>Source of description</name>
           <description>Source of item description. This should be a formal citation if possible. For informal sources a narrative description is acceptable.</description>
         </label>
-        <label locale="fr_FR">
-          <name>Source de la description</name>
-          <description>Source de la description de l\'item. Ceci doit être si possible une citation formelle. Pour des sources informelles une simple description est acceptable.</description>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -1363,10 +969,6 @@
           <name>Dates</name>
           <description>A point or period of time associated with an event in the lifecycle of the resource.</description>
         </label>
-        <label locale="fr_FR">
-          <name>Dates</name>
-          <description>Un point du temps ou une période auquel est associé un événement dans la vie de la ressource.</description>
-        </label>
       </labels>
       <documentationUrl>http://dublincore.org/documents/dcmi-terms/#terms-date</documentationUrl>
       <settings>
@@ -1378,9 +980,6 @@
             <label locale="en_US">
               <name>Date</name>
             </label>
-            <label locale="fr_FR">
-              <name>Date</name>
-            </label>
           </labels>
           <settings>
             <setting name="fieldWidth">40</setting>
@@ -1390,9 +989,6 @@
         <metadataElement code="dates_type" datatype="List" list="date_types">
           <labels>
             <label locale="en_US">
-              <name>Type</name>
-            </label>
-            <label locale="fr_FR">
               <name>Type</name>
             </label>
           </labels>
@@ -1443,10 +1039,6 @@
           <name>Caption</name>
           <description>Short descriptive caption for item.</description>
         </label>
-        <label locale="fr_FR">
-          <name>Légende</name>
-          <description>Courte légende descriptive de l\'item.</description>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -1486,10 +1078,6 @@
         <label locale="en_US">
           <name>Library of Congress Subject Headings</name>
           <description>Library of Congress Subject headings describing this object. To add a new heading simply type the first few letters of the heading and choose the desired one from the displayed list of possible matches.</description>
-        </label>
-        <label locale="fr_FR">
-          <name>Vedettes matières de la Bibliothèque du Congrès (Library of Congress Subject Headings)</name>
-          <description>Vedettes matières s\'appliquant à l\'objet. Pour ajouter une nouvelle vedette matière saisir simplement les premières lettres de la vedette et en sélectionner une parmi la liste des réponses disponibles.</description>
         </label>
       </labels>
       <settings>
@@ -1544,9 +1132,6 @@
         <label locale="en_US">
           <name>External links</name>
         </label>
-        <label locale="fr_FR">
-          <name>Liens externes</name>
-        </label>
       </labels>
       <settings>
         <setting name="doesNotTakeLocale">1</setting>
@@ -1557,9 +1142,6 @@
             <label locale="en_US">
               <name>Web site name</name>
             </label>
-            <label locale="fr_FR">
-              <name>Nom du site web</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -1567,9 +1149,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Web site name</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Nom du site web</name>
                 </label>
               </labels>
               <settings>
@@ -1586,18 +1165,12 @@
             <label locale="en_US">
               <name>URL</name>
             </label>
-            <label locale="fr_FR">
-              <name>URL</name>
-            </label>
           </labels>
           <settings/>
           <elements>
             <metadataElement code="url_entry" datatype="Url">
               <labels>
                 <label locale="en_US">
-                  <name>URL</name>
-                </label>
-                <label locale="fr_FR">
                   <name>URL</name>
                 </label>
               </labels>
@@ -1657,10 +1230,6 @@
         <label locale="en_US">
           <name>Notes (internal use only)</name>
           <description>Notes regarding item or event</description>
-        </label>
-        <label locale="fr_FR">
-          <name>Notes (usage interne uniquement)</name>
-          <description>Notes à propos de l\'item ou de l\'événement</description>
         </label>
       </labels>
       <settings>
@@ -1728,10 +1297,6 @@
           <name>GeoNames</name>
           <description>A Geographic lookup that takes search text, passes it to the GeoNames search service and provides a dropdown with search results (ordered by score). Selected geoname is stored as both text (name, country, continent and ID) and the service URL identifier.</description>
         </label>
-        <label locale="fr_FR">
-          <name>GeoName</name>
-          <description>Une recherche géographique qui prend une recherche texte, la relaie auprès du service de recherche GeoNames et fournit une liste déroulante avec les résultats de recherche (triés par pertinence). Le GeoName sélectionné est stocké à la fois comme texte (nom, pays, continent et ID) et sous la forme de l\'URL du service.</description>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">60</setting>
@@ -1798,10 +1363,6 @@
           <name>Georeference</name>
           <description>Coordinates documenting the location of the item</description>
         </label>
-        <label locale="fr_FR">
-          <name>Géoréférence</name>
-          <description>Coordonnées de la localisation de l\'item</description>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">60</setting>
@@ -1867,9 +1428,6 @@
         <label locale="en_US">
           <name>Condition</name>
         </label>
-        <label locale="fr_FR">
-          <name>Condition</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">40</setting>
@@ -1890,9 +1448,6 @@
       <labels>
         <label locale="en_US">
           <name>Physical description</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Description physique</name>
         </label>
       </labels>
       <settings>
@@ -1915,9 +1470,6 @@
       <labels>
         <label locale="en_US">
           <name>Medium</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Médium</name>
         </label>
       </labels>
       <settings>
@@ -1942,10 +1494,6 @@
           <name>Dimensions</name>
           <description>Physical dimensions of object</description>
         </label>
-        <label locale="fr_FR">
-          <name>Dimensions</name>
-          <description>Dimensions physiques de l\'objet</description>
-        </label>
       </labels>
       <settings>
         <setting name="doesNotTakeLocale">1</setting>
@@ -1956,10 +1504,6 @@
             <label locale="en_US">
               <name>Width</name>
               <description>Width of object; enter in your preferred units (eg. 10cm</description>
-            </label>
-            <label locale="fr_FR">
-              <name>Largeur</name>
-              <description>Largeur de l\'objet ; saisissez la dans l\'unité de votre choix (par exemple 10cm</description>
             </label>
           </labels>
           <settings>
@@ -1973,10 +1517,6 @@
               <name>Height</name>
               <description>Height of object; enter in your preferred units (eg. 10cm</description>
             </label>
-            <label locale="fr_FR">
-              <name>Hauteur</name>
-              <description>Hauteur de l\'objet ; saisissez la dans l\'unité de votre choix (par exemple 10cm</description>
-            </label>
           </labels>
           <settings>
             <setting name="fieldWidth">10</setting>
@@ -1989,10 +1529,6 @@
               <name>Depth</name>
               <description>Depth of object; enter in your preferred units (eg. 10cm</description>
             </label>
-            <label locale="fr_FR">
-              <name>Profondeur</name>
-              <description>Profondeur de l\'objet ; saisissez la dans l\'unité de votre choix (par exemple 10cm</description>
-            </label>
           </labels>
           <settings>
             <setting name="fieldWidth">10</setting>
@@ -2004,10 +1540,6 @@
             <label locale="en_US">
               <name>Type</name>
               <description>The type of measurement this is.</description>
-            </label>
-            <label locale="fr_FR">
-              <name>Type</name>
-              <description>Le type de mesure dont il s\'agit.</description>
             </label>
           </labels>
           <settings>
@@ -2032,9 +1564,6 @@
         <label locale="en_US">
           <name>Object date</name>
         </label>
-        <label locale="fr_FR">
-          <name>Date de l\'objet</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">40</setting>
@@ -2055,9 +1584,6 @@
         <label locale="en_US">
           <name>Accession date</name>
         </label>
-        <label locale="fr_FR">
-          <name>Date d\'acquisition</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">40</setting>
@@ -2077,9 +1603,6 @@
       <labels>
         <label locale="en_US">
           <name>Administrative notes</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Notes administratives</name>
         </label>
       </labels>
       <settings>
@@ -2103,9 +1626,6 @@
         <label locale="en_US">
           <name>Edition number</name>
         </label>
-        <label locale="fr_FR">
-          <name>Mention d\'édition</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">20</setting>
@@ -2126,9 +1646,6 @@
     <metadataElement code="inscription" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Inscription</name>
-        </label>
-        <label locale="fr_FR">
           <name>Inscription</name>
         </label>
       </labels>
@@ -2153,9 +1670,6 @@
         <label locale="en_US">
           <name>Provenance</name>
         </label>
-        <label locale="fr_FR">
-          <name>Origine</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2179,10 +1693,6 @@
           <name>Past storage locations</name>
           <description>Track the history of object storage and movement.</description>
         </label>
-        <label locale="fr_FR">
-          <name>Précédents emplacements</name>
-          <description>Conserve l\'historique des emplacements et des mouvements d\'un objet.</description>
-        </label>
       </labels>
       <settings/>
       <elements>
@@ -2191,9 +1701,6 @@
             <label locale="en_US">
               <name>Storage Location</name>
             </label>
-            <label locale="fr_FR">
-              <name>Emplacement</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2201,9 +1708,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Storage Location</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Emplacement</name>
                 </label>
               </labels>
               <settings>
@@ -2220,9 +1724,6 @@
             <label locale="en_US">
               <name>Date of Move</name>
             </label>
-            <label locale="fr_FR">
-              <name>Date de mouvement</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2230,9 +1731,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Date of Move</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Date de mouvement</name>
                 </label>
               </labels>
               <settings>
@@ -2249,9 +1747,6 @@
             <label locale="en_US">
               <name>Authorization</name>
             </label>
-            <label locale="fr_FR">
-              <name>Autorisation</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2259,9 +1754,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Authorization</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Autorisation</name>
                 </label>
               </labels>
               <settings>
@@ -2290,9 +1782,6 @@
       <labels>
         <label locale="en_US">
           <name>Credit</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Crédit</name>
         </label>
       </labels>
       <settings>
@@ -2325,9 +1814,6 @@
         <label locale="en_US">
           <name>Condition notes</name>
         </label>
-        <label locale="fr_FR">
-          <name>Etat de conservation</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2349,9 +1835,6 @@
       <labels>
         <label locale="en_US">
           <name>Media license</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Licence du média</name>
         </label>
       </labels>
       <settings>
@@ -2375,9 +1858,6 @@
         <label locale="en_US">
           <name>Purchase price</name>
         </label>
-        <label locale="fr_FR">
-          <name>Prix d\'achat</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2397,9 +1877,6 @@
       <labels>
         <label locale="en_US">
           <name>Color type</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Type de couleur</name>
         </label>
       </labels>
       <settings>
@@ -2432,9 +1909,6 @@
         <label locale="en_US">
           <name>Runtime</name>
         </label>
-        <label locale="fr_FR">
-          <name>Durée</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2457,9 +1931,6 @@
         <label locale="en_US">
           <name>Media rights</name>
         </label>
-        <label locale="fr_FR">
-          <name>Droits pour le média</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2478,9 +1949,6 @@
       <labels>
         <label locale="en_US">
           <name>Nationality</name>
-        </label>
-        <label locale="fr_FR">
-          <name>Nationalité</name>
         </label>
       </labels>
       <settings>
@@ -2504,9 +1972,6 @@
         <label locale="en_US">
           <name>Biography</name>
         </label>
-        <label locale="fr_FR">
-          <name>Biographie</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2529,9 +1994,6 @@
         <label locale="en_US">
           <name>Life dates</name>
         </label>
-        <label locale="fr_FR">
-          <name>Dates</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">40</setting>
@@ -2552,9 +2014,6 @@
         <label locale="en_US">
           <name>Address</name>
         </label>
-        <label locale="fr_FR">
-          <name>Adresse</name>
-        </label>
       </labels>
       <settings/>
       <elements>
@@ -2563,9 +2022,6 @@
             <label locale="en_US">
               <name>Address line 1</name>
             </label>
-            <label locale="fr_FR">
-              <name>Adresse ligne 1</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2573,9 +2029,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Address line 1</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Adresse ligne 1</name>
                 </label>
               </labels>
               <settings>
@@ -2592,9 +2045,6 @@
             <label locale="en_US">
               <name>Address line 2</name>
             </label>
-            <label locale="fr_FR">
-              <name>Adresse ligne 2</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2602,9 +2052,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Address line 2</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Adresse ligne 2</name>
                 </label>
               </labels>
               <settings>
@@ -2621,9 +2068,6 @@
             <label locale="en_US">
               <name>Address line 3</name>
             </label>
-            <label locale="fr_FR">
-              <name>Adresse ligne 3</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2631,9 +2075,6 @@
               <labels>
                 <label locale="en_US">
                   <name>City</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Ville</name>
                 </label>
               </labels>
               <settings>
@@ -2648,9 +2089,6 @@
                 <label locale="en_US">
                   <name>State/province</name>
                 </label>
-                <label locale="fr_FR">
-                  <name>Etat/province</name>
-                </label>
               </labels>
               <settings>
                 <setting name="fieldWidth">15</setting>
@@ -2664,9 +2102,6 @@
                 <label locale="en_US">
                   <name>Postal/zip code</name>
                 </label>
-                <label locale="fr_FR">
-                  <name>Code postal</name>
-                </label>
               </labels>
               <settings>
                 <setting name="fieldWidth">10</setting>
@@ -2679,9 +2114,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Country</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Pays</name>
                 </label>
               </labels>
               <settings>
@@ -2698,9 +2130,6 @@
             <label locale="en_US">
               <name>Address type</name>
             </label>
-            <label locale="fr_FR">
-              <name>Type d\'adresse</name>
-            </label>
           </labels>
           <settings/>
           <elements>
@@ -2708,9 +2137,6 @@
               <labels>
                 <label locale="en_US">
                   <name>Address type</name>
-                </label>
-                <label locale="fr_FR">
-                  <name>Type d\'adresse</name>
                 </label>
               </labels>
               <settings>
@@ -2739,9 +2165,6 @@
         <label locale="en_US">
           <name>Telephone/fax</name>
         </label>
-        <label locale="fr_FR">
-          <name>Téléphone/fax</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2764,9 +2187,6 @@
       <labels>
         <label locale="en_US">
           <name>Web site url</name>
-        </label>
-        <label locale="fr_FR">
-          <name>URL du site web</name>
         </label>
       </labels>
       <settings>
@@ -2791,9 +2211,6 @@
         <label locale="en_US">
           <name>Email address</name>
         </label>
-        <label locale="fr_FR">
-          <name>Adresse email</name>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">90</setting>
@@ -2815,9 +2232,6 @@
     <metadataElement code="lot_notes" datatype="Text">
       <labels>
         <label locale="en_US">
-          <name>Notes</name>
-        </label>
-        <label locale="fr_FR">
           <name>Notes</name>
         </label>
       </labels>
@@ -2842,10 +2256,6 @@
         <label locale="en_US">
           <name>Rights</name>
           <description>Information about rights held in and over the resource.</description>
-        </label>
-        <label locale="fr_FR">
-          <name>Droits</name>
-          <description>Informations sur les droits détenus sur la ressource et les droits dérivés.</description>
         </label>
       </labels>
       <documentationUrl>http://dublincore.org/documents/dcmi-terms/#terms-rights</documentationUrl>
@@ -2872,10 +2282,6 @@
           <name>Citation</name>
           <description>Add citation information related to the publication</description>
         </label>
-        <label locale="fr_FR">
-          <name>Citation</name>
-          <description>Ajouter une information de citation dans une publication</description>
-        </label>
       </labels>
       <settings>
         <setting name="fieldWidth">80</setting>
@@ -2901,10 +2307,6 @@
           <name>Publication Information</name>
           <description>Information about the publication.</description>
         </label>
-        <label locale="fr_FR">
-          <name>Information de publication</name>
-          <description>Information sur la publication.</description>
-        </label>
       </labels>
       <settings>
         <setting name="doesNotTakeLocale">1</setting>
@@ -2914,9 +2316,6 @@
           <labels>
             <label locale="en_US">
               <name>publication Container</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Informations de publication</name>
             </label>
           </labels>
           <settings>
@@ -2928,10 +2327,6 @@
                 <label locale="en_US">
                   <name>ISBN Number</name>
                   <description>The ISBN number for the book.</description>
-                </label>
-                <label locale="fr_FR">
-                  <name>ISBN</name>
-                  <description>Le numéro ISBN de l\'ouvrage.</description>
                 </label>
               </labels>
               <settings>
@@ -2949,9 +2344,6 @@
             <label locale="en_US">
               <name>publication Container 2</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations de publication 2</name>
-            </label>
           </labels>
           <settings>
             <setting name="fieldWidth">90</setting>
@@ -2962,10 +2354,6 @@
                 <label locale="en_US">
                   <name>Number of Pages</name>
                   <description>How many pages there are in the book.</description>
-                </label>
-                <label locale="fr_FR">
-                  <name>Nombre de pages</name>
-                  <description>Le nombre de pages du livre.</description>
                 </label>
               </labels>
               <settings>
@@ -2983,10 +2371,6 @@
             <label locale="en_US">
               <name>Edition of</name>
               <description>How many books were published</description>
-            </label>
-            <label locale="fr_FR">
-              <name>Edition de</name>
-              <description>Combien de livres ont été publiés</description>
             </label>
           </labels>
           <settings>
@@ -3016,10 +2400,6 @@
           <name>Alternate publication numbers</name>
           <description>List alternate publication numbers (ISBN</description>
         </label>
-        <label locale="fr_FR">
-          <name>Autres numéros de publication</name>
-          <description>Lister ici les autres numéros de publications (ISBN</description>
-        </label>
       </labels>
       <settings>
         <setting name="doesNotTakeLocale">1</setting>
@@ -3030,10 +2410,6 @@
             <label locale="en_US">
               <name>Alternate publication numbers</name>
               <description>List alternate publication numbers (ISBN</description>
-            </label>
-            <label locale="fr_FR">
-              <name>Autres numéros de publication</name>
-              <description>Lister ici les autres numéros de publications (ISBN</description>
             </label>
           </labels>
           <settings>
@@ -3047,9 +2423,6 @@
         <metadataElement code="alternate_pub_number_type" datatype="List" list="alternate_pub_number_types">
           <labels>
             <label locale="en_US">
-              <name>Type</name>
-            </label>
-            <label locale="fr_FR">
               <name>Type</name>
             </label>
           </labels>
@@ -3077,9 +2450,6 @@
         <label locale="en_US">
           <name>Standard object editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur d\'objet standard</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -3087,18 +2457,13 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" locale="fr_FR">Titre</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un titre</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3117,9 +2482,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" locale="fr_FR">Autres titres</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre titre</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_work_description">
@@ -3159,9 +2522,6 @@
             <label locale="en_US">
               <name>Administrative info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations administratives</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_attribute_historical_context">
@@ -3192,7 +2552,6 @@
               <bundle>ca_object_lots</bundle>
               <settings>
                 <setting name="label" locale="en_US">Part of lot</setting>
-                <setting name="label" locale="fr_FR">Partie du lot</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3201,9 +2560,6 @@
           <labels>
             <label locale="en_US">
               <name>Media</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Média</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3217,18 +2573,13 @@
             <label locale="en_US">
               <name>Storage</name>
             </label>
-            <label locale="fr_FR">
-              <name>Emplacement</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_storage_locations">
               <bundle>ca_storage_locations</bundle>
               <settings>
                 <setting name="label" locale="en_US">Current storage location</setting>
-                <setting name="label" locale="fr_FR">Emplacement courant</setting>
                 <setting name="add_label" locale="en_US">Add storage location</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un emplacement</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_past_storage_locations">
@@ -3241,9 +2592,6 @@
             <label locale="en_US">
               <name>Sets</name>
             </label>
-            <label locale="fr_FR">
-              <name>Ensembles</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_sets">
@@ -3255,9 +2603,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3289,9 +2634,6 @@
             <label locale="en_US">
               <name>Keywords</name>
             </label>
-            <label locale="fr_FR">
-              <name>Mots-clés</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_list_items">
@@ -3301,9 +2643,7 @@
               <bundle>ca_attribute_lcsh_terms</bundle>
               <settings>
                 <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" locale="fr_FR">Vedettes matières Bibliothèque du Congrès</setting>
                 <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter une nouvelle vedette matière</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3315,9 +2655,6 @@
         <label locale="en_US">
           <name>Standard entity editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur standard d\'entité</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -3325,18 +2662,13 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
-                <setting name="label" locale="fr_FR">Nom</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un nom</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3352,9 +2684,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate name</setting>
-                <setting name="label" locale="fr_FR">Autre nom</setting>
                 <setting name="add_label" locale="en_US">Add alternate name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre nom</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_lifespan">
@@ -3376,9 +2706,6 @@
             <label locale="en_US">
               <name>Contact info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations de contact</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_attribute_address">
@@ -3399,9 +2726,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3429,9 +2753,6 @@
         <label locale="en_US">
           <name>Occurrences editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur d\'occurrences</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -3439,16 +2760,12 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" locale="fr_FR">Titre</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3467,7 +2784,6 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" locale="fr_FR">Autres titres</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_date">
@@ -3501,7 +2817,6 @@
               <bundle>ca_attribute_external_link</bundle>
               <settings>
                 <setting name="add_label" locale="en_US">Add external link</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un lien externe</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3510,9 +2825,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3535,9 +2847,6 @@
             <label locale="en_US">
               <name>Location</name>
             </label>
-            <label locale="fr_FR">
-              <name>Localisation</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_places">
@@ -3556,9 +2865,6 @@
             <label locale="en_US">
               <name>Keywords</name>
             </label>
-            <label locale="fr_FR">
-              <name>Mots-clés</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_list_items">
@@ -3568,9 +2874,7 @@
               <bundle>ca_attribute_lcsh_terms</bundle>
               <settings>
                 <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" locale="fr_FR">Vedettes matières Bibliothèque du Congrès</setting>
                 <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter une nouvelle vedette matière</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3582,18 +2886,12 @@
         <label locale="en_US">
           <name>Place editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur de lieu</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
           <labels>
             <label locale="en_US">
               <name>Basic info</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3604,9 +2902,7 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
-                <setting name="label" locale="fr_FR">Nom</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un nom</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3627,9 +2923,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3655,9 +2948,6 @@
             <label locale="en_US">
               <name>Location</name>
             </label>
-            <label locale="fr_FR">
-              <name>Localisation</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="hierarchy_location">
@@ -3670,9 +2960,6 @@
             <label locale="en_US">
               <name>Alternate names</name>
             </label>
-            <label locale="fr_FR">
-              <name>Autres noms</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="hierarchy_navigation">
@@ -3682,9 +2969,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate names</setting>
-                <setting name="label" locale="fr_FR">Autres noms</setting>
                 <setting name="add_label" locale="en_US">Add alternate name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre nom</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3696,9 +2981,6 @@
         <label locale="en_US">
           <name>Standard collection editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur standard de collection</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -3706,16 +2988,12 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" locale="fr_FR">Titre</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3731,7 +3009,6 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" locale="fr_FR">Autres titres</setting>
               </settings>
             </placement>
             <placement code="ca_attribute_date">
@@ -3746,9 +3023,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3774,9 +3048,6 @@
             <label locale="en_US">
               <name>Keywords</name>
             </label>
-            <label locale="fr_FR">
-              <name>Mots-clés</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_list_items">
@@ -3786,9 +3057,7 @@
               <bundle>ca_attribute_lcsh_terms</bundle>
               <settings>
                 <setting name="label" locale="en_US">Library of Congress Subject Headings</setting>
-                <setting name="label" locale="fr_FR">Vedettes matières Bibliothèque du Congrès</setting>
                 <setting name="add_label" locale="en_US">Add new subject heading</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter une nouvelle vedette matière</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -3797,9 +3066,6 @@
           <labels>
             <label locale="en_US">
               <name>Links</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Liens</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3815,9 +3081,6 @@
         <label locale="en_US">
           <name>Standard object lot editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur standard de lot d\'objets</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -3825,18 +3088,13 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
-                <setting name="label" locale="fr_FR">Nom</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un nom</setting>
               </settings>
             </placement>
             <placement code="idno_stub">
@@ -3849,9 +3107,7 @@
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate names</setting>
-                <setting name="label" locale="fr_FR">Autres noms</setting>
                 <setting name="add_label" locale="en_US">Add alternate name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre nom</setting>
               </settings>
             </placement>
             <placement code="extent">
@@ -3873,9 +3129,6 @@
             <label locale="en_US">
               <name>Entities</name>
             </label>
-            <label locale="fr_FR">
-              <name>Entités</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_entities">
@@ -3887,9 +3140,6 @@
           <labels>
             <label locale="en_US">
               <name>Objects</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Objets</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3905,18 +3155,12 @@
         <label locale="en_US">
           <name>Storage locations editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur d\'emplacements</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
           <labels>
             <label locale="en_US">
               <name>Basic info</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -3927,9 +3171,7 @@
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Name</setting>
-                <setting name="label" locale="fr_FR">Nom</setting>
                 <setting name="add_label" locale="en_US">Add name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un nom</setting>
               </settings>
             </placement>
             <placement code="idno">
@@ -3951,9 +3193,6 @@
             <label locale="en_US">
               <name>Location</name>
             </label>
-            <label locale="fr_FR">
-              <name>Localisation</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="hierarchy_location">
@@ -3969,9 +3208,6 @@
             <label locale="en_US">
               <name>Contents</name>
             </label>
-            <label locale="fr_FR">
-              <name>Contenu</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="hierarchy_navigation">
@@ -3986,9 +3222,6 @@
           <labels>
             <label locale="en_US">
               <name>Alternate names</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Autres noms</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -4011,9 +3244,6 @@
         <label locale="en_US">
           <name>Object representation editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur de représentation d\'objet</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -4021,27 +3251,20 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" locale="fr_FR">Titre</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un titre</setting>
               </settings>
             </placement>
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate names</setting>
-                <setting name="label" locale="fr_FR">Autres noms</setting>
                 <setting name="add_label" locale="en_US">Add alternate name</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre nom</setting>
               </settings>
             </placement>
             <placement code="media">
@@ -4072,9 +3295,6 @@
             <label locale="en_US">
               <name>Annotations</name>
             </label>
-            <label locale="fr_FR">
-              <name>Annotations</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_representation_annotations">
@@ -4086,9 +3306,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -4113,9 +3330,6 @@
         <label locale="en_US">
           <name>Representation annotation editor</name>
         </label>
-        <label locale="fr_FR">
-          <name>Editeur d\'annotation de représentation</name>
-        </label>
       </labels>
       <screens>
         <screen idno="basic" default="1">
@@ -4123,18 +3337,13 @@
             <label locale="en_US">
               <name>Basic info</name>
             </label>
-            <label locale="fr_FR">
-              <name>Informations basiques</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Title</setting>
-                <setting name="label" locale="fr_FR">Titre</setting>
                 <setting name="add_label" locale="en_US">Add title</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un titre</setting>
               </settings>
             </placement>
             <placement code="ca_representation_annotation_properties">
@@ -4156,9 +3365,6 @@
             <label locale="en_US">
               <name>Keywords</name>
             </label>
-            <label locale="fr_FR">
-              <name>Mots-clés</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="ca_list_items">
@@ -4170,9 +3376,6 @@
           <labels>
             <label locale="en_US">
               <name>Relationships</name>
-            </label>
-            <label locale="fr_FR">
-              <name>Relations</name>
             </label>
           </labels>
           <bundlePlacements>
@@ -4195,18 +3398,13 @@
             <label locale="en_US">
               <name>Alternate names</name>
             </label>
-            <label locale="fr_FR">
-              <name>Autres noms</name>
-            </label>
           </labels>
           <bundlePlacements>
             <placement code="nonpreferred_labels">
               <bundle>nonpreferred_labels</bundle>
               <settings>
                 <setting name="label" locale="en_US">Alternate titles</setting>
-                <setting name="label" locale="fr_FR">Autres titres</setting>
                 <setting name="add_label" locale="en_US">Add alternate title</setting>
-                <setting name="add_label" locale="fr_FR">Ajouter un autre titre</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -4223,10 +3421,6 @@
               <typename>had as artist</typename>
               <typename_reverse>was artist</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour artiste</typename>
-              <typename_reverse>était l\'artiste</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4236,10 +3430,6 @@
             <label locale="en_US">
               <typename>had as curator</typename>
               <typename_reverse>was curator of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour commissaire d\'exposition</typename>
-              <typename_reverse>était le commissaire d\'exposition de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4251,10 +3441,6 @@
               <typename>had as moderator</typename>
               <typename_reverse>was moderator of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour modérateur</typename>
-              <typename_reverse>était le modérateur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4264,10 +3450,6 @@
             <label locale="en_US">
               <typename>had as speaker</typename>
               <typename_reverse>was speaker in</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour orateur</typename>
-              <typename_reverse>était l\'orateur de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4279,10 +3461,6 @@
               <typename>had as panelist</typename>
               <typename_reverse>was panelist in</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour critique</typename>
-              <typename_reverse>était le critique de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4292,10 +3470,6 @@
             <label locale="en_US">
               <typename>had as documentarian</typename>
               <typename_reverse>is documentarian of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour documentaliste</typename>
-              <typename_reverse>était le documentaliste de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4307,10 +3481,6 @@
               <typename>had as architect</typename>
               <typename_reverse>was architect of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour architecte</typename>
-              <typename_reverse>était l\'architecte de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4320,10 +3490,6 @@
             <label locale="en_US">
               <typename>had as designer</typename>
               <typename_reverse>was designer of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour designer</typename>
-              <typename_reverse>était le designer de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4335,10 +3501,6 @@
               <typename>has as author</typename>
               <typename_reverse>was author of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour auteur</typename>
-              <typename_reverse>était l\'auteur</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4348,10 +3510,6 @@
             <label locale="en_US">
               <typename>had as performer</typename>
               <typename_reverse>was performer in</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour performer</typename>
-              <typename_reverse>était performer dans</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4363,10 +3521,6 @@
               <typename>had as staff member</typename>
               <typename_reverse>was staff member for</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a comporté parmi l\'équipe</typename>
-              <typename_reverse>faisait partie de l\'équipe de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4376,10 +3530,6 @@
             <label locale="en_US">
               <typename>had as consultant</typename>
               <typename_reverse>was consultant for</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour consultant</typename>
-              <typename_reverse>était consultant pour</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4391,10 +3541,6 @@
               <typename>had as publisher</typename>
               <typename_reverse>was publisher for</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour éditeur</typename>
-              <typename_reverse>était l\'éditeur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4405,10 +3551,6 @@
               <typename>had as sponsor</typename>
               <typename_reverse>was sponsor for</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a eu pour sponsor</typename>
-              <typename_reverse>était le sponsor de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4418,10 +3560,6 @@
             <label locale="en_US">
               <typename>had as partner</typename>
               <typename_reverse>was partner for</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a eu pour partenaire</typename>
-              <typename_reverse>était le partenaire de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4437,10 +3575,6 @@
               <typename>is part of</typename>
               <typename_reverse>contains</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>fait partie de</typename>
-              <typename_reverse>contient</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4455,10 +3589,6 @@
               <typename>was created at</typename>
               <typename_reverse>was creation location of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a créé à</typename>
-              <typename_reverse>était le lieu de création de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4468,10 +3598,6 @@
             <label locale="en_US">
               <typename>was located at</typename>
               <typename_reverse>was location of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a été localisé à</typename>
-              <typename_reverse>était la localisation de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>image</subTypeLeft>
@@ -4483,10 +3609,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté dans</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4496,10 +3618,6 @@
             <label locale="en_US">
               <typename>describes</typename>
               <typename_reverse>is described by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit dans</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4515,10 +3633,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté dans</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4529,10 +3643,6 @@
               <typename>was used in</typename>
               <typename_reverse>used</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a été utilisé dans</typename>
-              <typename_reverse>utilise</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4542,10 +3652,6 @@
             <label locale="en_US">
               <typename>describes</typename>
               <typename_reverse>is described by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit dans</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4561,10 +3667,6 @@
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4574,10 +3676,6 @@
             <label locale="en_US">
               <typename>is similar to</typename>
               <typename_reverse>is similar to</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est similaire à</typename>
-              <typename_reverse>est similaire à</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4589,10 +3687,6 @@
               <typename>is duplicate of</typename>
               <typename_reverse>is duplicate of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est un doublon de</typename>
-              <typename_reverse>est un doublon de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4602,10 +3696,6 @@
             <label locale="en_US">
               <typename>is part of</typename>
               <typename_reverse>contains</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>fait partie de</typename>
-              <typename_reverse>contient</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4621,10 +3711,6 @@
               <typename>is described by</typename>
               <typename_reverse>describes</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est décrit par</typename>
-              <typename_reverse>décrit</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4634,10 +3720,6 @@
             <label locale="en_US">
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté dans</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4653,10 +3735,6 @@
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4667,10 +3745,6 @@
               <typename>is child of</typename>
               <typename_reverse>is parent of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est un enfant de</typename>
-              <typename_reverse>est un parent de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft>individual</subTypeLeft>
           <subTypeRight>individual</subTypeRight>
@@ -4680,10 +3754,6 @@
             <label locale="en_US">
               <typename>is spouse of</typename>
               <typename_reverse>is spouse of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est l\'époux/l\'épouse de</typename>
-              <typename_reverse>est l\'époux/l\'épouse de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>individual</subTypeLeft>
@@ -4699,10 +3769,6 @@
               <typename>was born at</typename>
               <typename_reverse>was birthplace of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est né à</typename>
-              <typename_reverse>est le lieu de naissance de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4712,10 +3778,6 @@
             <label locale="en_US">
               <typename>resided at</typename>
               <typename_reverse>was residence of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a habité à</typename>
-              <typename_reverse>était le lieu de résidence de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4727,10 +3789,6 @@
               <typename>worked at</typename>
               <typename_reverse>was workplace of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a travaillé à</typename>
-              <typename_reverse>était le lieu de travail de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4741,10 +3799,6 @@
               <typename>owned</typename>
               <typename_reverse>was owned by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>était le propriétaire de</typename>
-              <typename_reverse>appartenait à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4754,10 +3808,6 @@
             <label locale="en_US">
               <typename>built</typename>
               <typename_reverse>was built by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a construit</typename>
-              <typename_reverse>a été construit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4773,10 +3823,6 @@
               <typename>had as artist</typename>
               <typename_reverse>was artist</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour artiste</typename>
-              <typename_reverse>était l\'artiste de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4786,10 +3832,6 @@
             <label locale="en_US">
               <typename>had as curator</typename>
               <typename_reverse>was curator of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour commissaire d\'exposition</typename>
-              <typename_reverse>était le commissaire d\'exposition de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4801,10 +3843,6 @@
               <typename>had as moderator</typename>
               <typename_reverse>was moderator of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour modérateur</typename>
-              <typename_reverse>était le modérateur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4814,10 +3852,6 @@
             <label locale="en_US">
               <typename>had as panelist</typename>
               <typename_reverse>was panelist in</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour critique</typename>
-              <typename_reverse>était critique de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4829,10 +3863,6 @@
               <typename>had as speaker</typename>
               <typename_reverse>was speaker in</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour orateur</typename>
-              <typename_reverse>était orateur dans</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4842,10 +3872,6 @@
             <label locale="en_US">
               <typename>had as documentarian</typename>
               <typename_reverse>is documentarian of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour documentaliste</typename>
-              <typename_reverse>était le documentaliste de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4857,10 +3883,6 @@
               <typename>had as architect</typename>
               <typename_reverse>was architect of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour architecte</typename>
-              <typename_reverse>était l\'architecte de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4870,10 +3892,6 @@
             <label locale="en_US">
               <typename>had as designer</typename>
               <typename_reverse>was designer of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour designer</typename>
-              <typename_reverse>était le designer de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4885,10 +3903,6 @@
               <typename>has as author</typename>
               <typename_reverse>was author of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour auteur</typename>
-              <typename_reverse>était l\'auteur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4898,10 +3912,6 @@
             <label locale="en_US">
               <typename>had as performer</typename>
               <typename_reverse>was performer in</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour performer</typename>
-              <typename_reverse>était le performer de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4913,10 +3923,6 @@
               <typename>had as staff member</typename>
               <typename_reverse>was staff member fo</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait parmi l\'équipe</typename>
-              <typename_reverse>faisait partie de l\'équipe de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft>interview</subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4926,10 +3932,6 @@
             <label locale="en_US">
               <typename>had as consultant</typename>
               <typename_reverse>was consultant for</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour consultant</typename>
-              <typename_reverse>était le consultant de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4941,10 +3943,6 @@
               <typename>had as publisher</typename>
               <typename_reverse>was publisher for</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour éditeur</typename>
-              <typename_reverse>était l\'éditeur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4955,10 +3953,6 @@
               <typename>had as sponsor</typename>
               <typename_reverse>was sponsor for</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>avait pour sponsor</typename>
-              <typename_reverse>était le sponsor de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -4968,10 +3962,6 @@
             <label locale="en_US">
               <typename>had as partner museum</typename>
               <typename_reverse>was partner museum for</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>avait pour musée partenaire</typename>
-              <typename_reverse>était le musée partenaire de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -4987,10 +3977,6 @@
               <typename>was donated by</typename>
               <typename_reverse>is donor of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>a été donné par</typename>
-              <typename_reverse>est le donateur de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5000,10 +3986,6 @@
             <label locale="en_US">
               <typename>was provided by</typename>
               <typename_reverse>is provider of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a été fourni par</typename>
-              <typename_reverse>est le fournisseur de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5019,10 +4001,6 @@
               <typename>originates from</typename>
               <typename_reverse>is origination location of</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>provient de</typename>
-              <typename_reverse>est la provenance de</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5036,10 +4014,6 @@
             <label locale="en_US">
               <typename>is part of</typename>
               <typename_reverse>contains</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>fait partie de</typename>
-              <typename_reverse>contient</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5055,10 +4029,6 @@
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5072,10 +4042,6 @@
             <label locale="en_US">
               <typename>is described by</typename>
               <typename_reverse>describes</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est décrit par</typename>
-              <typename_reverse>décrit</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5091,10 +4057,6 @@
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5108,10 +4070,6 @@
             <label locale="en_US">
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est décrit par</typename>
-              <typename_reverse>est décrit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft>event</subTypeLeft>
@@ -5127,10 +4085,6 @@
               <typename>is described by</typename>
               <typename_reverse>describes</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est décrit par</typename>
-              <typename_reverse>décrit</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5144,10 +4098,6 @@
             <label locale="en_US">
               <typename>has as subject</typename>
               <typename_reverse>is subject of</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>a pour sujet</typename>
-              <typename_reverse>est le sujet de</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5163,10 +4113,6 @@
               <typename>was location of</typename>
               <typename_reverse>occurred at</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>était la localisation de</typename>
-              <typename_reverse>a eu lieu à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight>subject_program</subTypeRight>
@@ -5180,10 +4126,6 @@
             <label locale="en_US">
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5199,10 +4141,6 @@
               <typename>is described by</typename>
               <typename_reverse>describes</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est décrit par</typename>
-              <typename_reverse>décrit</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5216,10 +4154,6 @@
             <label locale="en_US">
               <typename>is location of</typename>
               <typename_reverse>is located in</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est le lieu de</typename>
-              <typename_reverse>a eu lieu à</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5235,10 +4169,6 @@
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>est lié à</typename>
-              <typename_reverse>est lié à</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5253,10 +4183,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté par</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5266,10 +4192,6 @@
             <label locale="en_US">
               <typename>is illustrated by</typename>
               <typename_reverse>illustrates</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>est illustré par</typename>
-              <typename_reverse>illustre</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5285,10 +4207,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté par</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5298,10 +4216,6 @@
             <label locale="en_US">
               <typename>describes</typename>
               <typename_reverse>is described by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5317,10 +4231,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté par</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight></subTypeRight>
@@ -5330,10 +4240,6 @@
             <label locale="en_US">
               <typename>describes</typename>
               <typename_reverse>is described by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5349,10 +4255,6 @@
               <typename>depicts</typename>
               <typename_reverse>is depicted by</typename_reverse>
             </label>
-            <label locale="fr_FR">
-              <typename>représente</typename>
-              <typename_reverse>est représenté par</typename_reverse>
-            </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight>event</subTypeRight>
@@ -5362,10 +4264,6 @@
             <label locale="en_US">
               <typename>describes</typename>
               <typename_reverse>is described by</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -5380,10 +4278,6 @@
             <label locale="en_US">
               <typename>is described by</typename>
               <typename_reverse>describes</typename_reverse>
-            </label>
-            <label locale="fr_FR">
-              <typename>décrit</typename>
-              <typename_reverse>est décrit par</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
