@@ -62,59 +62,27 @@
         </label>
       </labels>
       <items>
-        <item idno="document" enabled="1" default="1">
+        <item idno="object" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Document</name_singular>
-              <name_plural>Documents</name_plural>
+              <name_singular>Object</name_singular>
+              <name_plural>Objects</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="drawing" enabled="1" default="1">
+        <item idno="feature" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Drawing</name_singular>
-              <name_plural>Drawings</name_plural>
+              <name_singular>Feature</name_singular>
+              <name_plural>Features</name_plural>
             </label>
           </labels>
         </item>
-        <item idno="film_media" enabled="1" default="1">
+        <item idno="fcr_rock" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Film &amp; Media</name_singular>
-              <name_plural>Film &amp; Media</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="painting" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Painting</name_singular>
-              <name_plural>Paintings</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="photography" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Photography</name_singular>
-              <name_plural>Photography</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="print" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Print</name_singular>
-              <name_plural>Prints</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="sculpture" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Sculpture</name_singular>
-              <name_plural>Sculptures</name_plural>
+              <name_singular>FCR Rock</name_singular>
+              <name_plural>FCR Rocks</name_plural>
             </label>
           </labels>
         </item>
@@ -140,14 +108,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="loan" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>loan</name_singular>
-              <name_plural>loans</name_plural>
             </label>
           </labels>
         </item>
@@ -192,14 +152,6 @@
             </label>
           </labels>
         </item>
-        <item idno="purchase" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>purchase</name_singular>
-              <name_plural>purchases</name_plural>
-            </label>
-          </labels>
-        </item>
       </items>
     </list>
     <list code="object_label_types" hierarchical="0" system="0" vocabulary="0">
@@ -234,35 +186,11 @@
         </label>
       </labels>
       <items>
-        <item idno="donation" enabled="1" default="0">
+        <item idno="project" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>donation</name_singular>
-              <name_plural>donations</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="loan" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>loan</name_singular>
-              <name_plural>loans</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="purchase" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>purchase</name_singular>
-              <name_plural>purchases</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="promise" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>promised gift</name_singular>
-              <name_plural>promised gifts</name_plural>
+              <name_singular>Project</name_singular>
+              <name_plural>Projects</name_plural>
             </label>
           </labels>
         </item>
@@ -288,14 +216,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>accessioned</name_singular>
               <name_plural>accessioned</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="loan" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>loan</name_singular>
-              <name_plural>loans</name_plural>
             </label>
           </labels>
         </item>
@@ -384,6 +304,39 @@
         </item>
       </items>
     </list>
+    <list code="place_types" hierarchical="1" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Place types</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="region" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Region</name_singular>
+              <name_plural>Regions</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="poi" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>POI</name_singular>
+              <name_plural>POIs</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="aoi" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>AOI</name_singular>
+              <name_plural>AOIs</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
     <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -391,19 +344,11 @@
         </label>
       </labels>
       <items>
-        <item idno="individual" enabled="1" default="1">
+        <item idno="personnel" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>individual</name_singular>
-              <name_plural>individuals</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="organization" enabled="1" default="0">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>organization</name_singular>
-              <name_plural>organizations</name_plural>
+              <name_singular>personnel</name_singular>
+              <name_plural>personnel</name_plural>
             </label>
           </labels>
         </item>
@@ -1852,57 +1797,6 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
-    <metadataElement code="purchase_price" datatype="Currency">
-      <labels>
-        <label locale="en_US">
-          <name>Purchase price</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
-    <metadataElement code="colorType" datatype="List" list="color_type">
-      <labels>
-        <label locale="en_US">
-          <name>Color type</name>
-        </label>
-      </labels>
-      <settings>
-        <setting name="fieldWidth">90</setting>
-        <setting name="fieldHeight">1</setting>
-      </settings>
-      <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <type>film_media</type>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-        <restriction code="r2">
-          <table>ca_objects</table>
-          <type>photography</type>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
-      </typeRestrictions>
-    </metadataElement>
     <metadataElement code="runtime" datatype="TimeCode">
       <labels>
         <label locale="en_US">
@@ -1914,15 +1808,6 @@
         <setting name="fieldHeight">1</setting>
       </settings>
       <typeRestrictions>
-        <restriction code="r1">
-          <table>ca_objects</table>
-          <type>film_media</type>
-          <settings>
-            <setting name="minAttributesPerRow">1</setting>
-            <setting name="maxAttributesPerRow">1</setting>
-            <setting name="minimumAttributeBundlesToDisplay">1</setting>
-          </settings>
-        </restriction>
       </typeRestrictions>
     </metadataElement>
     <metadataElement code="media_rights" datatype="List" list="object_media_license_types">
@@ -2537,9 +2422,6 @@
             </placement>
             <placement code="ca_attribute_accession_date">
               <bundle>ca_attribute_accession_date</bundle>
-            </placement>
-            <placement code="ca_attribute_purchase_price">
-              <bundle>ca_attribute_purchase_price</bundle>
             </placement>
             <placement code="ca_attribute_provenance">
               <bundle>ca_attribute_provenance</bundle>
