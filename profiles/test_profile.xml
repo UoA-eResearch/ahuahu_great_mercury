@@ -70,11 +70,51 @@
             </label>
           </labels>
         </item>
+        <item idno="feature" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Feature</name_singular>
+              <name_plural>Features</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="deposit" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Deposit</name_singular>
+              <name_plural>Deposits</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="cut" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Cut</name_singular>
+              <name_plural>Cuts</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="level" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Level</name_singular>
+              <name_plural>Levels</name_plural>
+            </label>
+          </labels>
+        </item>
         <item idno="fcr_rock" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>FCR Rock</name_singular>
               <name_plural>FCR Rocks</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="measurement" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Measurement</name_singular>
+              <name_plural>Measurements</name_plural>
             </label>
           </labels>
         </item>
@@ -178,11 +218,11 @@
         </label>
       </labels>
       <items>
-        <item idno="feature" enabled="1" default="1">
+        <item idno="source" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Feature</name_singular>
-              <name_plural>Features</name_plural>
+              <name_singular>Source</name_singular>
+              <name_plural>Sources</name_plural>
             </label>
           </labels>
         </item>
@@ -343,30 +383,6 @@
             </label>
           </labels>
         </item>
-        <item idno="deposit" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Deposit</name_singular>
-              <name_plural>Deposits</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="cut" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Cut</name_singular>
-              <name_plural>Cuts</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="level" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Level</name_singular>
-              <name_plural>Levels</name_plural>
-            </label>
-          </labels>
-        </item>
       </items>
     </list>
     <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
@@ -435,7 +451,7 @@
         </label>
       </labels>
       <items>
-        <item idno="project" enabled="1" default="0">
+        <item idno="project" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Project</name_singular>
@@ -471,17 +487,9 @@
       <items>
         <item idno="publication" enabled="1" default="1">
           <labels>
-            <label locale="en_US" preferred="1">
+            <label locale="en_US" preferred="0">
               <name_singular>publication</name_singular>
               <name_plural>publications</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="c14" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>C14 datum</name_singular>
-              <name_plural>C14 Data</name_plural>
             </label>
           </labels>
         </item>

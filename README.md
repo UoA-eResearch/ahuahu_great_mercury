@@ -6,6 +6,10 @@ various instructions and files relating to it's ongoing operation.
 
 The current instance of Collective Access can be found at https://ca.uoaarchdb.cloud.edu.au
 
+## Configuration_files
+
+This directory houses configuration files that govern how CA is set up and operates.
+
 
 ## Instructions
 
@@ -21,3 +25,4 @@ This directory houses any pre-made and custom profiles:
 
 * `profile.xsd` provides the Schema to validate all templates against
 * `default.xml` provides a copy of the Collective Access default template
+* `test_profile.xml` is a test xml currently under development
