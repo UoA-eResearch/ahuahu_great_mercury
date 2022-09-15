@@ -14,7 +14,7 @@ the setup.php file, allowing you to drag and drop an XML file onto the browser i
 use the file to install the database.
 
 
-## Instructions
+## Profile installation instructions
 
 Navigate to https://ca.uoaarchdb.cloud.edu.au/install/ to (re-)run the installer.
 
@@ -29,3 +29,13 @@ Profiles are located in the `/var/www/html/ca/install/profile/xml` directory on 
 Select the "overwrite existing installation?" box and then click "begin installation". This process
 will take a few minutes to complete. When completed you will be given the username/password of the
 administrator account - note these down for use!
+
+
+## What the heck is this xml profile?
+
+The xml profile is used to "map/translate" your own database structure/schema (i.e. the Archeology DB schema) into a format that CA can understand how to use. This is done by mapping your own DB tables into 1 of the base-CA table types (objects, collections, places, entities, etc). You can specify as many "sub-types" as you desire and control almost every aspect of those sub-types. i.e. under the "object" table type you could create an "artifact" type, "stone" type, "fruit" type and so forth.
+
+The XML profile is broken up into 5 main sections: Locales, Lists, Elementsets, UserInterfaces, and RelationshipTypes.
+
+Mike read this!
+https://manual.collectiveaccess.org/providence/user/Cookbook/cookbook_install_profiles.html
