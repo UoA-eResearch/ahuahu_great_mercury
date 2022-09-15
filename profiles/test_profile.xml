@@ -70,14 +70,6 @@
             </label>
           </labels>
         </item>
-        <item idno="feature" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Feature</name_singular>
-              <name_plural>Features</name_plural>
-            </label>
-          </labels>
-        </item>
         <item idno="fcr_rock" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
@@ -186,11 +178,11 @@
         </label>
       </labels>
       <items>
-        <item idno="project" enabled="1" default="0">
+        <item idno="feature" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Project</name_singular>
-              <name_plural>Projects</name_plural>
+              <name_singular>Feature</name_singular>
+              <name_plural>Features</name_plural>
             </label>
           </labels>
         </item>
@@ -335,6 +327,46 @@
             </label>
           </labels>
         </item>
+        <item idno="structure" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Structure</name_singular>
+              <name_plural>Structures</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="complex" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Complex</name_singular>
+              <name_plural>Complexes</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="deposit" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Deposit</name_singular>
+              <name_plural>Deposits</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="cut" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Cut</name_singular>
+              <name_plural>Cuts</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="level" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Level</name_singular>
+              <name_plural>Levels</name_plural>
+            </label>
+          </labels>
+        </item>
       </items>
     </list>
     <list code="entity_types" hierarchical="1" system="0" vocabulary="0">
@@ -403,19 +435,11 @@
         </label>
       </labels>
       <items>
-        <item idno="internal" enabled="1" default="1">
+        <item idno="project" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Internal</name_singular>
-              <name_plural>Internal</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="external" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>External</name_singular>
-              <name_plural>External</name_plural>
+              <name_singular>Project</name_singular>
+              <name_plural>Projects</name_plural>
             </label>
           </labels>
         </item>
@@ -445,27 +469,19 @@
         </label>
       </labels>
       <items>
-        <item idno="exhibitions" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>exhibition</name_singular>
-              <name_plural>exhibitions</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="public_program" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>public program</name_singular>
-              <name_plural>public program</name_plural>
-            </label>
-          </labels>
-        </item>
         <item idno="publication" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>publication</name_singular>
               <name_plural>publications</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="c14" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>C14 datum</name_singular>
+              <name_plural>C14 Data</name_plural>
             </label>
           </labels>
         </item>
@@ -778,6 +794,23 @@
             <label locale="en_US" preferred="1">
               <name_singular>issued</name_singular>
               <name_plural>issued</name_plural>
+            </label>
+          </labels>
+        </item>
+      </items>
+    </list>
+    <list code="object_representation_types" hierarchical="0" system="0" vocabulary="0">
+      <labels>
+        <label locale="en_US">
+          <name>Object Representation types</name>
+        </label>
+      </labels>
+      <items>
+        <item idno="media" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Media</name_singular>
+              <name_plural>Media</name_plural>
             </label>
           </labels>
         </item>
