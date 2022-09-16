@@ -69,6 +69,24 @@
               <name_plural>Objects</name_plural>
             </label>
           </labels>
+          <items>
+            <item idno="artefact" enabled="1" default="1">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Artefact</name_singular>
+                  <name_plural>Artefacts</name_plural>
+                </label>
+              </labels>
+            </item>            
+            <item idno="fcr_rock" enabled="1" default="1">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>FCR Rock</name_singular>
+                  <name_plural>FCR Rocks</name_plural>
+                </label>
+              </labels>
+            </item>
+          </items>
         </item>
         <item idno="feature" enabled="1" default="1">
           <labels>
@@ -99,22 +117,6 @@
             <label locale="en_US" preferred="1">
               <name_singular>Level</name_singular>
               <name_plural>Levels</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="fcr_rock" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>FCR Rock</name_singular>
-              <name_plural>FCR Rocks</name_plural>
-            </label>
-          </labels>
-        </item>
-        <item idno="measurement" enabled="1" default="1">
-          <labels>
-            <label locale="en_US" preferred="1">
-              <name_singular>Measurement</name_singular>
-              <name_plural>Measurements</name_plural>
             </label>
           </labels>
         </item>
@@ -312,8 +314,16 @@
         <item idno="places" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Place Authority</name_singular>
-              <name_plural>Place Authority</name_plural>
+              <name_singular>Place</name_singular>
+              <name_plural>Places</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="example_place" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Top Level example (GM?)</name_singular>
+              <name_plural>Top Level examples (GM? Egypt?)</name_plural>
             </label>
           </labels>
         </item>
@@ -329,8 +339,16 @@
         <item idno="places" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
-              <name_singular>Place Authority</name_singular>
-              <name_plural>Place Authority</name_plural>
+              <name_singular>Place</name_singular>
+              <name_plural>Places</name_plural>
+            </label>
+          </labels>
+        </item>
+        <item idno="example_place" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Top Level example (GM?)</name_singular>
+              <name_plural>Top Level examples (GM? Egypt?)</name_plural>
             </label>
           </labels>
         </item>
@@ -351,7 +369,7 @@
             </label>
           </labels>
         </item>
-        <item idno="poi" enabled="1" default="1">
+        <item idno="poi" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>POI</name_singular>
@@ -359,7 +377,7 @@
             </label>
           </labels>
         </item>
-        <item idno="aoi" enabled="1" default="1">
+        <item idno="aoi" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>AOI</name_singular>
@@ -367,7 +385,7 @@
             </label>
           </labels>
         </item>
-        <item idno="structure" enabled="1" default="1">
+        <item idno="structure" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Structure</name_singular>
@@ -375,7 +393,7 @@
             </label>
           </labels>
         </item>
-        <item idno="complex" enabled="1" default="1">
+        <item idno="complex" enabled="1" default="0">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Complex</name_singular>
@@ -821,6 +839,24 @@
               <name_plural>Media</name_plural>
             </label>
           </labels>
+        </item>
+        <item idno="measurement" enabled="1" default="1">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Measurement</name_singular>
+              <name_plural>Measurements</name_plural>
+            </label>
+          </labels>
+          <items>
+            <item idno="C14" enabled="1" default="1">
+              <labels>
+              <label locale="en_US" preferred="1">
+                <name_singular>C14</name_singular>
+                <name_plural>C14</name_plural>
+              </label>
+            </labels>
+            </item>
+          </items>
         </item>
       </items>
     </list>
