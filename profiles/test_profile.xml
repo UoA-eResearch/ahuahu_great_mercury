@@ -1559,6 +1559,32 @@
             </placement>
           </bundlePlacements>
         </screen>
+        <screen idno="entities" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Entities</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_entities">
+              <bundle>ca_entities</bundle>
+            </placement>
+            <placement code="ca_level_features">
+              <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="restrict_to_relationship_types">level_feature</setting>
+                <setting name="label" locale="en_US">Related Features</setting>
+               </settings>
+            </placement>
+            <placement code="ca_levels">
+              <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="restrict_to_relationship_types">level</setting>
+                <setting name="label" locale="en_US">Related Level</setting>
+               </settings>
+            </placement>
+          </bundlePlacements>
+        </screen>
       </screens>
     </userInterface>
     <userInterface code="entities_ui" type="ca_entities">
@@ -2086,15 +2112,15 @@
     </relationshipTable>
     <relationshipTable name="ca_objects_x_objects">
       <types>
-        <type code="related" default="1">
+        <type code="level_feature" default="1">
           <labels>
             <label locale="en_US">
-              <typename>is related to</typename>
-              <typename_reverse>is related to</typename_reverse>
+              <typename>is level to</typename>
+              <typename_reverse>is feature of</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
+          <subTypeLeft>level</subTypeLeft>
+          <subTypeRight>feature</subTypeRight>
         </type>
         <type code="similar" default="0">
           <labels>
