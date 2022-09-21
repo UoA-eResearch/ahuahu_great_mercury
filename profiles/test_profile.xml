@@ -6,14 +6,6 @@
     <locale lang="en" country="US">English</locale>
   </locales>
   <lists>
-    <list code="aat_vocabulary" hierarchical="1" system="0" vocabulary="1">
-      <labels>
-        <label locale="en_US">
-          <name>Art &amp;amp; Architecture Thesaurus</name>
-        </label>
-      </labels>
-      <items/>
-    </list>
     <list code="object_sources" hierarchical="1" system="0" vocabulary="0">
       <labels>
         <label locale="en_US">
@@ -1556,6 +1548,12 @@
                 <setting name="add_label" locale="en_US">Add title</setting>
               </settings>
             </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+            </placement>
+            <placement code="status">
+              <bundle>status</bundle>
+            </placement>
             <placement code="idno">
               <bundle>idno</bundle>
             </placement>
@@ -1802,6 +1800,9 @@
             </placement>
             <placement code="lot_status_id">
               <bundle>lot_status_id</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
             </placement>
             <placement code="status">
               <bundle>status</bundle>
@@ -2127,30 +2128,6 @@
         </type>
       </types>
     </relationshipTable>
-    <relationshipTable name="ca_objects_x_vocabulary_terms">
-      <types>
-        <type code="described" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>is described by</typename>
-              <typename_reverse>describes</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="depicts" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>depicts</typename>
-              <typename_reverse>is depicted by</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
     <relationshipTable name="ca_entities_x_entities">
       <types>
         <type code="related" default="1">
@@ -2319,20 +2296,6 @@
         </type>
       </types>
     </relationshipTable>
-    <relationshipTable name="ca_entities_x_vocabulary_terms">
-      <types>
-        <type code="described" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>is described by</typename>
-              <typename_reverse>describes</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
     <relationshipTable name="ca_places_x_places">
       <types>
         <type code="related" default="1">
@@ -2361,34 +2324,6 @@
         </type>
       </types>
     </relationshipTable>
-    <relationshipTable name="ca_places_x_vocabulary_terms">
-      <types>
-        <type code="describes" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>is described by</typename>
-              <typename_reverse>describes</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
-    <relationshipTable name="ca_occurrences_x_vocabulary_terms">
-      <types>
-        <type code="subject" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>has as subject</typename>
-              <typename_reverse>is subject of</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
     <relationshipTable name="ca_places_x_occurrences">
       <types>
         <type code="location" default="1">
@@ -2410,20 +2345,6 @@
             <label locale="en_US">
               <typename>is related to</typename>
               <typename_reverse>is related to</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
-    <relationshipTable name="ca_collections_x_vocabulary_terms">
-      <types>
-        <type code="described" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>is described by</typename>
-              <typename_reverse>describes</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
@@ -2552,20 +2473,6 @@
           </labels>
           <subTypeLeft> </subTypeLeft>
           <subTypeRight>event</subTypeRight>
-        </type>
-      </types>
-    </relationshipTable>
-    <relationshipTable name="ca_representation_annotations_x_vocabulary_terms">
-      <types>
-        <type code="describes" default="1">
-          <labels>
-            <label locale="en_US">
-              <typename>is described by</typename>
-              <typename_reverse>describes</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
         </type>
       </types>
     </relationshipTable>
