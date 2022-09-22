@@ -54,7 +54,7 @@
         </label>
       </labels>
       <items>
-        <item idno="object" enabled="1" default="1">
+        <item idno="arch_object" enabled="1" default="1">
           <labels>
             <label locale="en_US" preferred="1">
               <name_singular>Object</name_singular>
@@ -1587,6 +1587,69 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+    <metadataElement code="object_metadata" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>object-specific metadata</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="minChars">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction code="r1">
+          <table>ca_objects</table>
+          <type>object</type>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="fcr_metadata" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>FCR-specific metadata</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="minChars">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction code="r1">
+          <table>ca_objects</table>
+          <type>fcr_rock</type>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="feature_metadata" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>Feature-specific metadata</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="minChars">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction code="r1">
+          <table>ca_objects</table>
+          <type>feature</type>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -1618,35 +1681,158 @@
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Global ID(ProjectID + UNID)</setting>
+              </settings>
             </placement>
             <placement code="ca_attribute_unid">
               <bundle>ca_attribute_unid</bundle>
             </placement>
+            <placement code="ca_related_project">
+              <bundle>ca_collections</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Belongs to Project</setting>
+              </settings>
+            </placement>
+            <placement code="ca_related_source">
+              <bundle>ca_object_lots</bundle>
+              <settings>
+                <setting name="label" locale="en_US">Recorded by Source</setting>
+              </settings>
+            </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="entities" default="0">
+        <screen idno="related_objects" default="0">
           <labels>
             <label locale="en_US">
-              <name>Entities</name>
+              <name>Related Objects</name>
             </label>
           </labels>
           <bundlePlacements>
-            <placement code="ca_entities">
-              <bundle>ca_entities</bundle>
-            </placement>
-            <placement code="ca_level_features">
+            <placement code="ca_related_feature">
               <bundle>ca_objects</bundle>
               <settings>
-                <setting name="restrict_to_relationship_types">level_feature</setting>
+                <setting name="restrict_to_types">feature</setting>
                 <setting name="label" locale="en_US">Related Features</setting>
                </settings>
             </placement>
-            <placement code="ca_levels">
+            <placement code="ca_related_deposit">
               <bundle>ca_objects</bundle>
               <settings>
-                <setting name="restrict_to_relationship_types">level</setting>
-                <setting name="label" locale="en_US">Related Level</setting>
+                <setting name="restrict_to_types">deposit</setting>
+                <setting name="label" locale="en_US">Related Deposits</setting>
                </settings>
+            </placement>
+            <placement code="ca_related_level">
+              <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="restrict_to_types">level</setting>
+                <setting name="label" locale="en_US">Related Levels</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_cut">
+              <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="restrict_to_types">cut</setting>
+                <setting name="label" locale="en_US">Related Cuts</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_arch_object">
+              <bundle>ca_objects</bundle>
+              <settings>
+                <setting name="restrict_to_types">arch_object</setting>
+                <setting name="label" locale="en_US">Related Objects</setting>
+               </settings>
+            </placement>
+            </bundlePlacements>
+        </screen>
+        <screen idno="related_places" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Related Places</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_related_poi">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="restrict_to_types">poi</setting>
+                <setting name="label" locale="en_US">Related POIs</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_aoi">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="restrict_to_types">aoi</setting>
+                <setting name="label" locale="en_US">Related AOIs</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_region">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="restrict_to_types">region</setting>
+                <setting name="label" locale="en_US">Related Regions</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_complex">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="restrict_to_types">complex</setting>
+                <setting name="label" locale="en_US">Related Complexes</setting>
+               </settings>
+            </placement>
+            <placement code="ca_related_structure">
+              <bundle>ca_places</bundle>
+              <settings>
+                <setting name="restrict_to_types">structure</setting>
+                <setting name="label" locale="en_US">Related Structures</setting>
+               </settings>
+            </placement>
+            </bundlePlacements>
+        </screen>
+        <screen idno="object_stuff" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Object-specific metadata</name>
+            </label>
+          </labels>
+          <typeRestrictions>
+            <restriction code="arch_object" type="arch_object"/>
+            <restriction code="fcr_rock" type="fcr_rock"/>
+          </typeRestrictions>
+          <bundlePlacements>
+            <placement code="ca_attribute_object_metadata">
+              <bundle>ca_attribute_object_metadata</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+        <screen idno="fcr_rock" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>FCR-Rock metadata</name>
+            </label>
+          </labels>
+          <typeRestrictions>
+            <restriction code="fcr_rock" type="fcr_rock"/>
+          </typeRestrictions>
+          <bundlePlacements>
+            <placement code="ca_attribute_fcr_metadata">
+              <bundle>ca_attribute_fcr_metadata</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
+        <screen idno="feature" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Feature-specific metadata</name>
+            </label>
+          </labels>
+          <typeRestrictions>
+            <restriction code="feature" type="feature"/>
+          </typeRestrictions>
+          <bundlePlacements>
+            <placement code="ca_attribute_feature_metadata">
+              <bundle>ca_attribute_feature_metadata</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -1904,6 +2090,12 @@
             <placement code="ca_attribute_lot_notes">
               <bundle>ca_attribute_lot_notes</bundle>
             </placement>
+            <placement code="extent">
+              <bundle>extent</bundle>
+            </placement>
+            <placement code="extent_units">
+              <bundle>extent_units</bundle>
+            </placement>
           </bundlePlacements>
         </screen>
         <screen idno="entities" default="0">
@@ -2115,23 +2307,13 @@
               <typename_reverse>contains</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft> </subTypeLeft>
+          <subTypeLeft></subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
       </types>
     </relationshipTable>
     <relationshipTable name="ca_objects_x_places">
       <types>
-        <type code="discovered" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>was discovered at</typename>
-              <typename_reverse>was discovery location of</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
         <type code="located" default="0">
           <labels>
             <label locale="en_US">
@@ -2139,7 +2321,7 @@
               <typename_reverse>was location of</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft>image</subTypeLeft>
+          <subTypeLeft></subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
       </types>
@@ -2180,44 +2362,28 @@
     </relationshipTable>
     <relationshipTable name="ca_objects_x_objects">
       <types>
-        <type code="level_feature" default="1">
+        <type code="related" default="1">
           <labels>
             <label locale="en_US">
-              <typename>is level to</typename>
-              <typename_reverse>is feature of</typename_reverse>
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft>level</subTypeLeft>
-          <subTypeRight>feature</subTypeRight>
-        </type>
-        <type code="similar" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>is similar to</typename>
-              <typename_reverse>is similar to</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
+          <subTypeLeft></subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
-        <type code="duplicate" default="0">
+      </types>
+    </relationshipTable>
+    <relationshipTable name="ca_objects_x_object_lots">
+      <types>
+        <type code="recorded" default="1">
           <labels>
             <label locale="en_US">
-              <typename>is duplicate of</typename>
-              <typename_reverse>is duplicate of</typename_reverse>
+              <typename>was recorded by</typename>
+              <typename_reverse>recorded</typename_reverse>
             </label>
           </labels>
-          <subTypeLeft> </subTypeLeft>
-          <subTypeRight></subTypeRight>
-        </type>
-        <type code="part_of" default="0">
-          <labels>
-            <label locale="en_US">
-              <typename>is part of</typename>
-              <typename_reverse>contains</typename_reverse>
-            </label>
-          </labels>
-          <subTypeLeft> </subTypeLeft>
+          <subTypeLeft></subTypeLeft>
           <subTypeRight></subTypeRight>
         </type>
       </types>
