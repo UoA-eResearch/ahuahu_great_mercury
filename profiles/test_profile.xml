@@ -1525,6 +1525,68 @@
         </restriction>
       </typeRestrictions>
     </metadataElement>
+    <metadataElement code="unid" datatype="Integer">
+      <labels>
+        <label locale="en_US">
+          <name>UNID</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="minChars">1</setting>
+        <setting name="mustNotBeBlank">1</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction code="r1">
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction code="r2">
+          <table>ca_places</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction code="r3">
+          <table>ca_occurrences</table>
+          <type>event</type>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction code="r4">
+          <table>ca_collections</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction code="r5">
+          <table>ca_storage_locations</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+        <restriction code="r6">
+          <table>ca_object_lots</table>
+          <settings>
+            <setting name="minAttributesPerRow">1</setting>
+            <setting name="maxAttributesPerRow">1</setting>
+            <setting name="minimumAttributeBundlesToDisplay">1</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
   </elementSets>
   <userInterfaces>
     <userInterface code="objects_ui" type="ca_objects">
@@ -1556,6 +1618,9 @@
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
+            </placement>
+            <placement code="ca_attribute_unid">
+              <bundle>ca_attribute_unid</bundle>
             </placement>
           </bundlePlacements>
         </screen>
@@ -1735,6 +1800,9 @@
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
+            </placement>
+            <placement code="ca_attribute_unid">
+              <bundle>ca_attribute_unid</bundle>
             </placement>
             <placement code="access">
               <bundle>access</bundle>
