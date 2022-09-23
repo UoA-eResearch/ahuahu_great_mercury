@@ -469,6 +469,32 @@
             </label>
           </labels>
         </item>
+        <item idno="source" enabled="1" default="0">
+          <labels>
+            <label locale="en_US" preferred="1">
+              <name_singular>Source</name_singular>
+              <name_plural>Sources</name_plural>
+            </label>
+          </labels>
+          <items>
+            <item idno="camera" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Camera</name_singular>
+                  <name_plural>Cameras</name_plural>
+                </label>
+              </labels>
+            </item>
+            <item idno="drone" enabled="1" default="0">
+              <labels>
+                <label locale="en_US" preferred="1">
+                  <name_singular>Drone</name_singular>
+                  <name_plural>Drones</name_plural>
+                </label>
+              </labels>
+            </item>
+          </items>
+        </item>
       </items>
     </list>
     <list code="collection_sources" hierarchical="1" system="0" vocabulary="0">
@@ -1691,12 +1717,16 @@
             <placement code="ca_related_project">
               <bundle>ca_collections</bundle>
               <settings>
+                <setting name="restrict_to_types">project</setting>
                 <setting name="label" locale="en_US">Belongs to Project</setting>
               </settings>
             </placement>
             <placement code="ca_related_source">
-              <bundle>ca_object_lots</bundle>
+              <bundle>ca_collections</bundle>
               <settings>
+                <setting name="restrict_to_types">source</setting>
+                <setting name="restrict_to_types">camera</setting>
+                <setting name="restrict_to_types">drone</setting>
                 <setting name="label" locale="en_US">Recorded by Source</setting>
               </settings>
             </placement>
@@ -1851,6 +1881,9 @@
               <name>Basic info</name>
             </label>
           </labels>
+          <typeRestrictions>
+            <restriction code="personnel" type="personnel"/>
+          </typeRestrictions>
           <bundlePlacements>
             <placement code="preferred_labels">
               <bundle>preferred_labels</bundle>
@@ -1892,6 +1925,9 @@
               <name>Contact info</name>
             </label>
           </labels>
+          <typeRestrictions>
+            <restriction code="personnel" type="personnel"/>
+          </typeRestrictions>
           <bundlePlacements>
             <placement code="ca_attribute_address">
               <bundle>ca_attribute_address</bundle>
@@ -2291,6 +2327,16 @@
             <label locale="en_US">
               <typename>had as discoverer</typename>
               <typename_reverse>was discoverer of</typename_reverse>
+            </label>
+          </labels>
+          <subTypeLeft> </subTypeLeft>
+          <subTypeRight></subTypeRight>
+        </type>
+        <type code="related" default="0">
+          <labels>
+            <label locale="en_US">
+              <typename>is related to</typename>
+              <typename_reverse>is related to</typename_reverse>
             </label>
           </labels>
           <subTypeLeft> </subTypeLeft>
