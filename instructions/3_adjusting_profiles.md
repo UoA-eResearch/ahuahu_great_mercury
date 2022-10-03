@@ -33,9 +33,44 @@ administrator account - note these down for use!
 
 ## What the heck is this xml profile?
 
+See `https://manual.collectiveaccess.org/providence/user/dataModelling/introductionData.html` to delve into the verbose CA documentation on Data structure and XML profiles. Read on for Mike's abridged version of the XML files.
+
 The xml profile is used to "map/translate" your own database structure/schema (i.e. the Archeology DB schema) into a format that CA can understand how to use. This is done by mapping your own DB tables into 1 of the base-CA table types (objects, collections, places, entities, etc). You can specify as many "sub-types" as you desire and control almost every aspect of those sub-types. i.e. under the "object" table type you could create an "artifact" type, "stone" type, "fruit" type and so forth.
 
 The XML profile is broken up into 5 main sections: Locales, Lists, Elementsets, UserInterfaces, and RelationshipTypes.
 
-Mike read this!
-https://manual.collectiveaccess.org/providence/user/Cookbook/cookbook_install_profiles.html
+### Locales
+
+This is the smallest section of the XML profile and is used to specify the languages to be used throughout the Collective Access instance. e.g.
+
+```
+<locales>
+  <locale lang="en" country="US">English</locale>
+  <locale lang="mi" country="NZ">Māori</locale>
+</locales>
+```
+
+While this is the smallest section of the profile it is responsible for a large portion of the XML file in the form of Label tags associated with almost every user-facing aspect of the XML file. All tables, metadata elements, relationships, and user inferaces require you to specify a label for the item in question, and each label needs to be tied to one of the specified locales.
+
+### Lists
+
+- To expand
+
+### Element sets
+
+- To expand
+
+
+### User Intefaces
+
+- To expand
+
+
+### Relationship Types
+
+- To expand
+
+
+### Extras
+
+A useful cookbook/FAQ for installation profiles can be found at `https://manual.collectiveaccess.org/providence/user/Cookbook/cookbook_install_profiles.html`.
