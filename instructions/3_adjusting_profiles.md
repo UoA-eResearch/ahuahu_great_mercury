@@ -39,7 +39,7 @@ The xml profile is used to "map/translate" your own database structure/schema (i
 
 The XML profile is broken up into 5 main sections: Locales, Lists, Elementsets, UserInterfaces, and RelationshipTypes.
 
-### Locales
+## Locales
 
 This is the smallest section of the XML profile and is used to specify the languages to be used throughout the Collective Access instance. e.g.
 
@@ -52,13 +52,17 @@ This is the smallest section of the XML profile and is used to specify the langu
 
 While this is the smallest section of the profile it is responsible for a large portion of the XML file in the form of Label tags associated with almost every user-facing aspect of the XML file. All tables, metadata elements, relationships, and user inferaces require you to specify a label for the item in question, and each label needs to be tied to one of the specified locales. Currently only English is implemented in the `test-profile.xml`.
 
-### Lists
+## Lists
 
-This section is where you define the ArchDB tables that you wish to populate Collective Access with. The ArchDB tables need to be "mapped" onto the base CA tables so that CA understands "what" the ArchDB tables are and what to do with them. The mapping is done in this section of the xml. 
+This section is where you define the ArchDB tables that you wish to populate Collective Access with. The ArchDB tables need to be mapped onto the base CA tables so that CA understands what the ArchDB tables are and what to do with them. The mapping is done in this section of the xml. 
 
 The `lists` section is composed of a number of `<list> </list>` entries. These entries take the form of `<list> code="XXX_YYY"</list>` where `XXX` is typically a base CA table such as `object` or `entity`, and where `YYY` is typically a suffix such as `type`, or `sources` and `statuses`. 
 
-Each of these lists also takes the `hierarchical`, `system`, and `vocabulary` boolean flags that detewrmine whether the tables are heirarchical in nature, whether they belong to the CA system, and whether they are vocabulary tables.
+Each of these lists also takes `hierarchical`, `system`, and `vocabulary` boolean flags that determine whether the tables are heirarchical in nature, whether they belong to the CA system, and whether they are vocabulary tables. Most likely you won't need these.
+
+**It is unlikely that you will need to add any new top level list entries, and CA will not work properly if some of the entries are omitted.**
+
+Instead you will need to customise the contents of the list entries.
 
 ```
 <lists>
@@ -72,7 +76,6 @@ Each of these lists also takes the `hierarchical`, `system`, and `vocabulary` bo
 </lists>
 ```
 
-**It is unlikely that you will need to add any new top level list entries, and CA will not work properly if some of the entries are omitted.** Instead you will need to customise the contents of the list entries.
 
 The `<list> code="XXX_type"</list>` entries can be used to create one or more custom table types of a base CA table. The example below shows how a `Feature` table can be created using the CA `object` base table by adding it as an item entry:
 
@@ -96,7 +99,7 @@ The `<list> code="XXX_type"</list>` entries can be used to create one or more cu
 </list>
 ```
 
-Similarly, sub-types of a ArchDB object can be made by nesting an `<items> </items>` field in an existing ArchDB item:
+Similarly, sub-types of an ArchDB object can be made by nesting an `<items> </items>` field in an existing ArchDB item:
 
 ```
 <list code="object_types" hierarchical="1" system="0" vocabulary="0">
@@ -127,23 +130,23 @@ Similarly, sub-types of a ArchDB object can be made by nesting an `<items> </ite
 </list
 ```
 
-The `<list> code="XXX_sources"</list>` and `<list> code="XXX_statuses"</list>` entries are used to specify "types" that correspond to intrinsic CA table metadata entries `source` and `status` that apply to various tables. They are intrinsic to CA so will break CA if omitted, however they may not be useful for the ArchDB. I have left them in for functionality but feel free to edit their entries as appropriate if you find a use!
+The `<list> code="XXX_sources"</list>` and `<list> code="XXX_statuses"</list>` entries are used to specify "types" that correspond to intrinsic CA table metadata entries `source` and `status` that apply to various tables. They are intrinsic to CA so will break CA if omitted, however they may not be useful for the ArchDB. I have left them in for functionality but feel free to edit their entries as appropriate.
 
-### Element sets
-
-- To expand
-
-
-### User Interfaces
+## Element sets
 
 - To expand
 
 
-### Relationship Types
+## User Interfaces
 
 - To expand
 
 
-### Extras
+## Relationship Types
+
+- To expand
+
+
+## Extras
 
 A useful cookbook/FAQ for installation profiles can be found at https://manual.collectiveaccess.org/providence/user/Cookbook/cookbook_install_profiles.html.
