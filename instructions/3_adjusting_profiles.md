@@ -132,17 +132,86 @@ Similarly, sub-types of an ArchDB object can be made by nesting an `<items> </it
 
 The `<list> code="XXX_sources"</list>` and `<list> code="XXX_statuses"</list>` entries are used to specify "types" that correspond to intrinsic CA table metadata entries `source` and `status` that apply to various tables. They are intrinsic to CA so will break CA if omitted, however they may not be useful for the ArchDB. I have left them in for functionality but feel free to edit their entries as appropriate.
 
+I have tried to add all the major ArchDB tables into the `test_profile.xml` under appropriate CA base table types, and so hopefully new ArchDB tables can be added as sub-types of these. If they can't and you are unsure what CA base type would be suitable then let me know and hopefully I can recommend. Mapping the major tables took a bit of experimentation to work out all of the nuiances.
+
 ## Element sets
 
 - To expand
 
 
-## User Interfaces
-
-- To expand
-
-
 ## Relationship Types
+
+I have placed this section before User Interfaces as conceptually Relationships should be dealt with before you address UIs (which will likely specify some relations.) 
+
+This section is used to broadly specify relations (i.e. Foreignkeys) between CA's base tables, but more specifically used to establish the types that each of these relations can take. For example we can broadly specify a relationship between CA `objects` and CA `entities` using the following code:
+
+```
+<relationshipTypes>
+  <relationshipTable name="ca_objects_x_entities">
+    </types>
+      <type code="related" default="0">
+        <labels>
+          <label locale="en_US">
+            <typename>is related to</typename>
+            <typename_reverse>is related to</typename_reverse>
+          </label>
+        </labels>
+        <subTypeLeft> </subTypeLeft>
+        <subTypeRight></subTypeRight>
+      </type>
+    </types>
+  </relationshipTable>
+</relationshipTypes>
+```
+
+At least one type is required for a RelationshipTable to be established. This will allow a relation between any CA Object, including ArchDB (sub)types based on a CA Object such as `Feature` and `Sub-Feature`, and any CA Entity such as the ArchDB `Personnel`. 
+
+You can specify multiple types of a relationship in order to better describe the relationship. For example, instead of simply saying that a `Feature` instance and `Personnel` instance are "related", you could create a type to specify that a `Personnel` instance was the "discoverer" of a `Feature` instance, or that a `Personnel` instance was the  "cataloguer" of a `Feature` instance:
+
+```
+<relationshipTypes>
+  <relationshipTable name="ca_objects_x_entities">
+    </types>
+      <type code="related" default="0">
+        <labels>
+          <label locale="en_US">
+            <typename>is related to</typename>
+            <typename_reverse>is related to</typename_reverse>
+          </label>
+        </labels>
+        <subTypeLeft> </subTypeLeft>
+        <subTypeRight></subTypeRight>
+      </type>
+      <type code="discoverer" default="0">
+        <labels>
+          <label locale="en_US">
+            <typename>was discovered by</typename>
+            <typename_reverse>was discoverer of</typename_reverse>
+          </label>
+        </labels>
+        <subTypeLeft> </subTypeLeft>
+        <subTypeRight></subTypeRight>
+      </type>
+      <type code="cataloguer" default="0">
+        <labels>
+          <label locale="en_US">
+            <typename>was catalogued by</typename>
+            <typename_reverse>was cataloguer of</typename_reverse>
+          </label>
+        </labels>
+        <subTypeLeft> </subTypeLeft>
+        <subTypeRight></subTypeRight>
+      </type>
+    </types>
+  </relationshipTable>
+</relationshipTypes>
+```
+
+It is possible to restrict relationship-types to specific (sub)types of CA tables using the `<subTypeLeft>` and `<subTypeRight>` fields within a type at the DB level.
+
+**From my own experience this was quite fiddly to specify** so I would just enforce this at the UI level unless it is really crucial that a "discoverer" cannot accidentally be used to describe the relationship between a Artefact(Object) and lets say a museum(entity). The extra effort to enforce this **could** save you some headaches in the future, but it certainly caused me some headaches trying to test it out!
+
+## User Interfaces
 
 - To expand
 
