@@ -143,7 +143,7 @@ I have tried to add all the major ArchDB tables into the `test_profile.xml` unde
 
 I have placed this section before User Interfaces as conceptually Relationships should be dealt with before you address UIs (which will likely specify some relations.) 
 
-This section is used to broadly specify relations (i.e. Foreignkeys) between CA's base tables, but more specifically used to establish the types that each of these relations can take. For example we can broadly specify a relationship between CA `objects` and CA `entities` using the following code:
+This section is used to broadly specify relations (i.e. Foreignkeys) between CA's base tables, but more specifically used to establish the types that each of these relations can take. For example we can broadly specify a relationship between CA `Objects` and CA `Entities` using the following code:
 
 ```
 <relationshipTypes>
@@ -207,9 +207,9 @@ You can specify multiple types of a relationship in order to better describe the
 </relationshipTypes>
 ```
 
-It is possible to restrict relationship-types to specific (sub)types of CA tables using the `<subTypeLeft>` and `<subTypeRight>` fields within a type at the DB level.
+These types could apply to any `Object<->Entity` relationship unless you choose to restrict relationship-types to specific (sub)types of CA tables using the `<subTypeLeft>` and `<subTypeRight>` fields within a type. This then enforces the RelationshipType restriction at the DB level.
 
-**From my own experience this was quite fiddly to specify** so I would just enforce this at the UI level unless it is really crucial that a "discoverer" cannot accidentally be used to describe the relationship between a Artefact(Object) and lets say a museum(entity). The extra effort to enforce this **could** save you some headaches in the future, but it certainly caused me some headaches trying to test it out!
+**From my own experience this was quite fiddly/verbose to specify (in tandem with UI filters)** so I would just enforce this at the UI level unless it is really crucial that a "discoverer" cannot accidentally be used to describe the relationship between, say, a Artefact(Object) and a museum(entity in this scenario). The extra effort to enforce this **could** save you some headaches in the future, but it certainly caused me some headaches trying to test it out! 
 
 ## User Interfaces
 
