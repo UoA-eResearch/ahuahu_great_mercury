@@ -281,8 +281,96 @@ These types could apply to any `Object<->Entity` relationship unless you choose 
 
 ## User Interfaces
 
-- To expand
+The final section that we'll cover is the `<userInterfaces>` section. This governs how tables and metadata are displayed in the CA UIs both in terms of viewing and editing. The `<userInterfaces>` section contains an entry for each of the base CA tables.
 
+```
+<userInterfaces>
+  <userInterface code="objects_ui" type="ca_objects">
+    ...
+  </userInterface>
+  <userInterface code="entities_ui" type="ca_entities">
+    ...
+  </userInterface>
+  ...
+</userInterfaces>
+```
+
+Each of the `<userInterface>` entries has the usual `<labels>` section, and then a `<screens>` section. Each screen represents an individual page to display selected bundles of metadata. By default each table type comes with a `<basic>` screen that is used to contain the intrinsic metadata such as table UIDs, titles, statuses, access, and more.
+
+```
+<userInterface code="objects_ui" type="ca_objects">
+  <labels>
+    <label locale="en_US">
+      <name>Standard object editor</name>
+    </label>
+  </labels>
+  <screens>
+    <screen idno="basic" default="1">
+      <labels>
+        <label locale="en_US">
+          <name>Basic info</name>
+        </label>
+      </labels>
+      <bundlePlacements>
+        <placement code="preferred_labels">
+          <bundle>preferred_labels</bundle>
+          <settings>
+            <setting name="label" locale="en_US">Title</setting>
+            <setting name="add_label" locale="en_US">Add title</setting>
+          </settings>
+        </placement>
+        <placement code="access">
+          <bundle>access</bundle>
+        </placement>
+        <placement code="status">
+          <bundle>status</bundle>
+        </placement>
+      </bundlePlacements>
+    </screen>
+  </screens>
+</userInterface>
+```
+
+You can add your own metadata elements to a UI by specifying them in a placement `<bundle> </bundle>` with the prefix `ca_attribute_XXX` where `XXX` is the unique code of the metadata field. The following example shows how to add the custom metadata field `unid` as a bundle in a placement on a screen:
+
+```
+<placement code="ca_attribute_unid">
+  <bundle>ca_attribute_unid</bundle>
+</placement>
+```
+
+You can also create placements and bundles to display metadata relations to other CA base tables. This can be done by specifying the bundle as a `<bundle>ca_XXXX</bundle>` entry, such as `<bundle>ca_collections</bundle>` to associate the field with the `collections` CA base table. You can restrict this field to specific types of sub tables, such as ArchDB tables, by adding a settings entry to the `<settings>` section of the bundle as follows:
+
+```
+<placement code="ca_related_project">
+  <bundle>ca_collections</bundle>
+  <settings>
+    <setting name="restrict_to_types">project</setting>
+    <setting name="label" locale="en_US">Belongs to Project</setting>
+  </settings>
+</placement>
+```
+where the contents `YYY` of the `<setting name="restrict_to_types"> YYY </setting>` refers to the code of a specific table. FOr the example above this refers to the `Project` table, which is a type of CA base table `Collections`. You can specify this multiple times to allow options from multiple table types.
+
+Finally, you can create and restrict a screen to a specific table by adding a `<typeRestrictions> </typeRestrictions>` entry to the screen itself. This is useful if you wish to show specific metadata for a specific object, such as for the `Feature` example below:
+
+```
+<screen idno="feature" default="0">
+  <labels>
+    <label locale="en_US">
+      <name>Feature-specific metadata</name>
+    </label>
+  </labels>
+  <typeRestrictions>
+    <restriction code="feature" type="feature"/>
+  </typeRestrictions>
+  <bundlePlacements>
+    <placement code="ca_attribute_feature_metadata">
+      <bundle>ca_attribute_feature_metadata</bundle>
+    </placement>
+  </bundlePlacements>
+</screen>
+```
 
 ## Extras
 
