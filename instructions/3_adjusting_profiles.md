@@ -136,8 +136,76 @@ I have tried to add all the major ArchDB tables into the `test_profile.xml` unde
 
 ## Element sets
 
-- To expand
+Once you have lists sorted it is time to populate those tables with metadata. In Collective Access you create metadata fields and attach these to the tables created in the list section. This can be done by creating a `<metadataElement> </metadataElement>` entry. Each entry takes two keyword arguments: `code` which is a unique identifier for the metadata field in question; and `datatype` which specifies the type of metadata you wish to create. For a full list of metadata types see https://manual.collectiveaccess.org/dataModelling/metadata.html.
 
+```
+<elementSets>
+  <metadataElement code="description" datatype="Text">
+    ...
+  </metadataElement>
+  <metadataElement code="accession_date" datatype="DateRange">
+    ...
+  </metadataElement>
+  ...
+</elementSets>
+```
+
+Each `MetadataElement` has a `<labels>` section for display and descriptive purposes a `<settings>` section, and a `<TypeRestrictions>` section. The `<settings>` section can be used to specify a wide range of type-specific settings ranging from visual properties to value restrictions. See https://manual.collectiveaccess.org/dataModelling/metadata/AttributeTypeSettings.html for more details. The `<TypeRestrictions>` section is used to associate a metadata field with one or more CA base tables. Each association requires a new `<restriction code="XX">` entry under the `<TypeRestrictions>` section, with XX being a unique code within the `<TypeRestrictions>` section.
+
+```
+<metadataElement code="description" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Description</name>
+      <description>Narrative description. This is the primary text used to document the item.</description>
+    </label>
+  </labels>
+  <settings>
+    <setting name="fieldWidth">90</setting>
+    <setting name="fieldHeight">6</setting>
+    <setting name="minChars">0</setting>
+    <setting name="maxChars">65535</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction code="r1">
+      <table>ca_objects</table>
+      <settings>
+        <setting name="minAttributesPerRow">1</setting>
+        <setting name="maxAttributesPerRow">1</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  <typeRestrictions>
+</metadataElement>
+```
+
+It is possible to constrain a metadata field to a specific ArchDB table by specifying the `<type>` within the `<restriction>` entry. This is shown in the example below, which shows how you can create a feature specific metadata field.
+
+```
+<metadataElement code="feature_metadata" datatype="Text">
+  <labels>
+    <label locale="en_US">
+      <name>Feature-specific metadata</name>
+    </label>
+  </labels>
+  <settings>
+    <setting name="minChars">1</setting>
+  </settings>
+  <typeRestrictions>
+    <restriction code="r1">
+      <table>ca_objects</table>
+      <type>feature</type>
+      <settings>
+        <setting name="minAttributesPerRow">1</setting>
+        <setting name="maxAttributesPerRow">1</setting>
+        <setting name="minimumAttributeBundlesToDisplay">1</setting>
+      </settings>
+    </restriction>
+  </typeRestrictions>
+</metadataElement>
+```
+
+Another nifty thing worth mentioning is the `datatype="Container"` option. Instead of creating a single metadata field, a `Container` allows you to create a group of fields under a single entry. This is a handy way to bundle up metadata that is expected to always be together, and an example of this would be an "Address" container containing entries for "Address line 1", "Address line 2", "postcode" and so on.
 
 ## Relationship Types
 
@@ -166,7 +234,7 @@ This section is used to broadly specify relations (i.e. Foreignkeys) between CA'
 
 At least one type is required for a RelationshipTable to be established. This will allow a relation between any CA Object, including ArchDB (sub)types based on a CA Object such as `Feature` and `Sub-Feature`, and any CA Entity such as the ArchDB `Personnel`. 
 
-You can specify multiple types of a relationship in order to better describe the relationship. For example, instead of simply saying that a `Feature` instance and `Personnel` instance are "related", you could create a type to specify that a `Personnel` instance was the "discoverer" of a `Feature` instance, or that a `Personnel` instance was the  "cataloguer" of a `Feature` instance:
+You can specify multiple types of a relationship in order to better describe the relationship. For example, instead of simply saying that a `Feature` instance and `Personnel` instance are "related", you could create a type to specify that a `Personnel` instance was the "discoverer" of a `Feature` instance, or that a `Personnel` instance was the "cataloguer" of a `Feature` instance:
 
 ```
 <relationshipTypes>
