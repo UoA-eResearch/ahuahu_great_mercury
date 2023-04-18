@@ -154,8 +154,11 @@ $ mkdir /gm_data/media/collectiveaccess/swf
 $ mkdir /gm_data/media/collectiveaccess/tilepics
 $ mkdir /gm_data/media/collectiveaccess/windowsmedia
 $ mkdir /gm_data/media/collectiveaccess/workspace
+$ mkdir /gm_data/import
 $ sudo rm -r /var/www/html/ca/media/collectiveaccess
+$ sudo rm -r /var/www/html/ca/import
 $ sudo ln -s /gm_data/media/collectiveaccess/ collectiveaccess
+$ sudo ln -s /gm_data/import/ /var/www/html/ca/import
 $ sudo chown -R www-data:www-data /gm_data/media/
 $ sudo systemctl restart apache2.service
 ```
