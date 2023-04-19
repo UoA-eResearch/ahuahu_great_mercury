@@ -1866,6 +1866,18 @@
             </placement>
           </bundlePlacements>
         </screen>
+        <screen idno="media" default="0">
+          <labels>
+            <label locale="en_US">
+              <name>Media</name>
+            </label>
+          </labels>
+          <bundlePlacements>
+            <placement code="ca_object_representations">
+              <bundle>ca_object_representations</bundle>
+            </placement>
+          </bundlePlacements>
+        </screen>
       </screens>
     </userInterface>
     <userInterface code="entities_ui" type="ca_entities">
