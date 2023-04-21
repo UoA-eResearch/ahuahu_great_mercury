@@ -2242,7 +2242,7 @@
         </screen>
       </screens>
     </userInterface>
-    <userInterface code="object_representation_ui" type="ca_object_representations">
+    <userInterface code="standard_representation_ui" type="ca_object_representations">
       <labels>
         <label locale="en_US">
           <name>Object representation editor</name>
