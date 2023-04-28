@@ -76,6 +76,8 @@ drop user gmdb@localhost;
 flush privileges;
 ```
 
+Recent addition my Mike: diable the binary logs (used for replication) by adding `skib-log-bin` to `/var/lib/mysql` to prevent Nectar home filling up.
+
 Edit the `setup.php` file (nano) to set up the following Collective Access settings:
 
 ```
