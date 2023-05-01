@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="profile.xsd" useForConfiguration="1" base="base" infoUrl="">
   <profileName>collectiveaccess</profileName>
-  <profileDescription>Profile created on April 29 2023 at 11:51:39 by CollectiveAccess Administrator</profileDescription>
+  <profileDescription>Profile created on May 1 2023 at 16:16:31 by CollectiveAccess Administrator</profileDescription>
   <locales>
     <locale lang="en" country="US">English</locale>
     <locale lang="en" country="CA" dontUseForCataloguing="1">English (Canadian)</locale>
@@ -482,25 +482,7 @@
             </label>
           </labels>
           <items>
-            <item idno="artefact" enabled="1" default="0" value="artefact" rank="24">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>Artefact</name_singular>
-                  <name_plural>Artefacts</name_plural>
-                  <description/>
-                </label>
-              </labels>
-            </item>
-            <item idno="fcr_rock" enabled="1" default="0" value="fcr_rock" rank="25">
-              <labels>
-                <label locale="en_US" preferred="1">
-                  <name_singular>FCR Rock</name_singular>
-                  <name_plural>FCR Rocks</name_plural>
-                  <description/>
-                </label>
-              </labels>
-            </item>
-            <item idno="obj_mnf" enabled="1" default="0" rank="160" type="concept">
+            <item idno="obj_mnf" enabled="1" default="0" value="obj_mnf" rank="160" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>MNF</name_singular>
@@ -509,7 +491,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_broken" enabled="1" default="0" rank="161" type="concept">
+            <item idno="obj_broken" enabled="1" default="0" value="obj_broken" rank="161" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Broken</name_singular>
@@ -518,7 +500,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_tools" enabled="1" default="0" rank="162" type="concept">
+            <item idno="obj_tools" enabled="1" default="0" value="obj_tools" rank="162" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Tool</name_singular>
@@ -527,7 +509,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_bone" enabled="1" default="0" rank="163" type="concept">
+            <item idno="obj_bone" enabled="1" default="0" value="obj_bone" rank="163" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Bone</name_singular>
@@ -536,7 +518,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_core" enabled="1" default="0" rank="164" type="concept">
+            <item idno="obj_core" enabled="1" default="0" value="obj_core" rank="164" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Core</name_singular>
@@ -545,7 +527,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_grindstone" enabled="1" default="0" rank="165" type="concept">
+            <item idno="obj_grindstone" enabled="1" default="0" value="obj_grindstone" rank="165" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Grindstone</name_singular>
@@ -554,7 +536,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_hearth" enabled="1" default="0" rank="166" type="concept">
+            <item idno="obj_hearth" enabled="1" default="0" value="obj_hearth" rank="166" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Hearth</name_singular>
@@ -563,7 +545,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_pottery" enabled="1" default="0" rank="167" type="concept">
+            <item idno="obj_pottery" enabled="1" default="0" value="obj_pottery" rank="167" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Pottery</name_singular>
@@ -572,7 +554,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_hammerstone" enabled="1" default="0" rank="168" type="concept">
+            <item idno="obj_hammerstone" enabled="1" default="0" value="obj_hammerstone" rank="168" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Hammerstone</name_singular>
@@ -581,7 +563,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_geosurveycore" enabled="1" default="0" rank="169" type="concept">
+            <item idno="obj_geosurveycore" enabled="1" default="0" value="obj_geosurveycore" rank="169" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>GeoSurveyCore</name_singular>
@@ -590,7 +572,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_lockpoint" enabled="1" default="0" rank="170" type="concept">
+            <item idno="obj_lockpoint" enabled="1" default="0" value="obj_lockpoint" rank="170" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Lockpoint</name_singular>
@@ -599,7 +581,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_stoneartefact" enabled="1" default="0" rank="171" type="concept">
+            <item idno="obj_stoneartefact" enabled="1" default="0" value="obj_stoneartefact" rank="171" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>StoneArtefact</name_singular>
@@ -611,7 +593,7 @@
                 <setting name="render_in_new_menu">1</setting>
               </settings>
             </item>
-            <item idno="obj_shell" enabled="1" default="0" rank="172" type="concept">
+            <item idno="obj_shell" enabled="1" default="0" value="obj_shell" rank="172" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Shell</name_singular>
@@ -620,7 +602,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_workedbone" enabled="1" default="0" rank="173" type="concept">
+            <item idno="obj_workedbone" enabled="1" default="0" value="obj_workedbone" rank="173" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>WorkedBone</name_singular>
@@ -629,7 +611,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_coin" enabled="1" default="0" rank="174" type="concept">
+            <item idno="obj_coin" enabled="1" default="0" value="obj_coin" rank="174" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Coin</name_singular>
@@ -638,7 +620,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_ostricheggshell" enabled="1" default="0" rank="175" type="concept">
+            <item idno="obj_ostricheggshell" enabled="1" default="0" value="obj_ostricheggshell" rank="175" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>OstrichEggShell</name_singular>
@@ -647,7 +629,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_button" enabled="1" default="0" rank="176" type="concept">
+            <item idno="obj_button" enabled="1" default="0" value="obj_button" rank="176" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Button</name_singular>
@@ -656,7 +638,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_osl" enabled="1" default="0" rank="177" type="concept">
+            <item idno="obj_osl" enabled="1" default="0" value="obj_osl" rank="177" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>OSL</name_singular>
@@ -665,7 +647,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_tetheringstone" enabled="1" default="0" rank="178" type="concept">
+            <item idno="obj_tetheringstone" enabled="1" default="0" value="obj_tetheringstone" rank="178" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>TetheringStone</name_singular>
@@ -674,7 +656,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_macehead" enabled="1" default="0" rank="179" type="concept">
+            <item idno="obj_macehead" enabled="1" default="0" value="obj_macehead" rank="179" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Macehead</name_singular>
@@ -683,7 +665,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_burnishingstone" enabled="1" default="0" rank="180" type="concept">
+            <item idno="obj_burnishingstone" enabled="1" default="0" value="obj_burnishingstone" rank="180" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>BurnishingStone</name_singular>
@@ -692,7 +674,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_scatter" enabled="1" default="0" rank="181" type="concept">
+            <item idno="obj_scatter" enabled="1" default="0" value="obj_scatter" rank="181" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Scatter</name_singular>
@@ -701,7 +683,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_beads" enabled="1" default="0" rank="182" type="concept">
+            <item idno="obj_bead" enabled="1" default="0" value="obj_beads" rank="182" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Bead</name_singular>
@@ -709,8 +691,11 @@
                   <description/>
                 </label>
               </labels>
+              <settings>
+                <setting name="render_in_new_menu">1</setting>
+              </settings>
             </item>
-            <item idno="obj_flora" enabled="1" default="0" rank="183" type="concept">
+            <item idno="obj_flora" enabled="1" default="0" value="obj_flora" rank="183" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Flora</name_singular>
@@ -719,7 +704,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_cache" enabled="1" default="0" rank="184" type="concept">
+            <item idno="obj_cache" enabled="1" default="0" value="obj_cache" rank="184" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Cache</name_singular>
@@ -728,7 +713,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_metal" enabled="1" default="0" rank="185" type="concept">
+            <item idno="obj_metal" enabled="1" default="0" value="obj_metal" rank="185" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Metal</name_singular>
@@ -737,7 +722,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_mollusc" enabled="1" default="0" rank="186" type="concept">
+            <item idno="obj_mollusc" enabled="1" default="0" value="obj_mollusc" rank="186" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Mollusc</name_singular>
@@ -746,7 +731,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_wood" enabled="1" default="0" rank="187" type="concept">
+            <item idno="obj_wood" enabled="1" default="0" value="obj_wood" rank="187" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Wood</name_singular>
@@ -755,7 +740,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_tooth" enabled="1" default="0" rank="188" type="concept">
+            <item idno="obj_tooth" enabled="1" default="0" value="obj_tooth" rank="188" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Tooth</name_singular>
@@ -764,7 +749,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_sample" enabled="1" default="0" rank="189" type="concept">
+            <item idno="obj_sample" enabled="1" default="0" value="obj_sample" rank="189" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Sample</name_singular>
@@ -773,7 +758,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_organic" enabled="1" default="0" rank="190" type="concept">
+            <item idno="obj_organic" enabled="1" default="0" value="obj_organic" rank="190" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Organic</name_singular>
@@ -782,7 +767,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_charcoal" enabled="1" default="0" rank="191" type="concept">
+            <item idno="obj_charcoal" enabled="1" default="0" value="obj_charcoal" rank="191" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Charcoal</name_singular>
@@ -791,7 +776,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_slag" enabled="1" default="0" rank="192" type="concept">
+            <item idno="obj_slag" enabled="1" default="0" value="obj_slag" rank="192" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Slag</name_singular>
@@ -800,7 +785,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_plant" enabled="1" default="0" rank="193" type="concept">
+            <item idno="obj_plant" enabled="1" default="0" value="obj_plant" rank="193" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Plant</name_singular>
@@ -809,7 +794,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_clay" enabled="1" default="0" rank="194" type="concept">
+            <item idno="obj_clay" enabled="1" default="0" value="obj_clay" rank="194" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Clay</name_singular>
@@ -818,7 +803,7 @@
                 </label>
               </labels>
             </item>
-            <item idno="obj_lithic" enabled="1" default="0" rank="195" type="concept">
+            <item idno="obj_lithic" enabled="1" default="0" value="obj_lithic" rank="195" type="concept">
               <labels>
                 <label locale="en_US" preferred="1">
                   <name_singular>Lithic</name_singular>
@@ -3993,7 +3978,7 @@
       <typeRestrictions>
         <restriction>
           <table>ca_objects</table>
-          <type>fcr_rock</type>
+          <type/>
           <settings>
             <setting name="minAttributesPerRow">1</setting>
             <setting name="maxAttributesPerRow">1</setting>
@@ -4073,6 +4058,91 @@
         <restriction>
           <table>ca_object_representations</table>
           <type>media</type>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="northing" datatype="Numeric">
+      <labels>
+        <label locale="en_US">
+          <name>Northing</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="maxChars">20</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="easting" datatype="Numeric">
+      <labels>
+        <label locale="en_US">
+          <name>Easting</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="maxChars">20</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="elevation" datatype="Numeric">
+      <labels>
+        <label locale="en_US">
+          <name>Elevation</name>
+        </label>
+      </labels>
+      <settings>
+        <setting name="maxChars">20</setting>
+      </settings>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
+          <settings>
+            <setting name="minAttributesPerRow">0</setting>
+            <setting name="maxAttributesPerRow">0</setting>
+            <setting name="minimumAttributeBundlesToDisplay">0</setting>
+          </settings>
+        </restriction>
+      </typeRestrictions>
+    </metadataElement>
+    <metadataElement code="orig_unid" datatype="Text">
+      <labels>
+        <label locale="en_US">
+          <name>ORIG_UNID</name>
+        </label>
+      </labels>
+      <typeRestrictions>
+        <restriction>
+          <table>ca_objects</table>
           <settings>
             <setting name="minAttributesPerRow">0</setting>
             <setting name="maxAttributesPerRow">0</setting>
@@ -6067,21 +6137,8 @@
                 <setting name="usewysiwygeditor"/>
               </settings>
             </placement>
-            <placement code="access">
-              <bundle>access</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
-            </placement>
-            <placement code="status">
-              <bundle>status</bundle>
-              <settings>
-                <setting name="readonly"/>
-                <setting name="expand_collapse_value">bubbles</setting>
-                <setting name="expand_collapse_no_value">bubbles</setting>
-              </settings>
+            <placement code="ca_attribute_description2">
+              <bundle>ca_attribute_description</bundle>
             </placement>
             <placement code="idno">
               <bundle>idno</bundle>
@@ -6143,6 +6200,25 @@
                 <setting name="prepopulateQuickaddFields">0</setting>
                 <setting name="sortDirection">ASC</setting>
                 <setting name="disableSorts">0</setting>
+              </settings>
+            </placement>
+            <placement code="ca_attribute_keywords7">
+              <bundle>ca_attribute_keywords</bundle>
+            </placement>
+            <placement code="access">
+              <bundle>access</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
+              </settings>
+            </placement>
+            <placement code="status">
+              <bundle>status</bundle>
+              <settings>
+                <setting name="readonly"/>
+                <setting name="expand_collapse_value">bubbles</setting>
+                <setting name="expand_collapse_no_value">bubbles</setting>
               </settings>
             </placement>
           </bundlePlacements>
@@ -6373,9 +6449,18 @@
                 <setting name="hierarchicalBrowserHeight">200px</setting>
               </settings>
             </placement>
+            <placement code="ca_attribute_northing6">
+              <bundle>ca_attribute_northing</bundle>
+            </placement>
+            <placement code="ca_attribute_easting7">
+              <bundle>ca_attribute_easting</bundle>
+            </placement>
+            <placement code="ca_attribute_elevation8">
+              <bundle>ca_attribute_elevation</bundle>
+            </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="object_stuff" default="0" typeRestrictions="arch_object,fcr_rock" includeSubtypes="0">
+        <screen idno="object_stuff" default="0" typeRestrictions="arch_object," includeSubtypes="0">
           <labels>
             <label locale="en_US">
               <name>Object-specific metadata</name>
@@ -6394,7 +6479,7 @@
             </placement>
           </bundlePlacements>
         </screen>
-        <screen idno="fcr_rock" default="0" typeRestrictions="fcr_rock" includeSubtypes="0">
+        <screen idno="fcr_rock" default="0" typeRestrictions="" includeSubtypes="0">
           <labels>
             <label locale="en_US">
               <name>FCR-Rock metadata</name>
@@ -6887,6 +6972,9 @@
                 <setting name="open_hierarchy">1</setting>
                 <setting name="auto_shrink"/>
               </settings>
+            </placement>
+            <placement code="ca_attribute_georeference2">
+              <bundle>ca_attribute_georeference</bundle>
             </placement>
           </bundlePlacements>
         </screen>
