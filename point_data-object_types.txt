@@ -1,0 +1,58 @@
+MNF
+Broken
+Tool
+Bone
+Core
+Grindstone
+Hearth
+Pottery
+Hammerstone
+GeoSurveyCore
+Lockpoint
+StoneArtefact
+Shell
+WorkedBone
+Coin
+OstrichEggShell
+Button
+OSL
+TetheringStone
+Macehead
+BurnishingStone
+Scatter
+Bead
+Flora
+Cache
+Metal
+Mollusc
+Wood
+Tooth
+Sample
+Organic
+Charcoal
+Slag
+Plant
+Clay
+Lithic
+
+
+# special atention needed
+#Station - Source
+#Photo - Media
+
+Should these be grouped somehow?
+#rock1
+#rock2
+#rock3
+
+Should these just be some kind of "analysed" flag or status?
+#(BoneAnalysed)
+#(StoneArtefactAnalysed)
+
+# what to do with these
+#center
+#Section
+#TransectBoundary
+#BaseHeight
+#Elevation
+
