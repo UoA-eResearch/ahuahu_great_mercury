@@ -163,7 +163,7 @@ $ sudo chown -R www-data:www-data /gm_data/media/
 $ sudo systemctl restart apache2.service
 ```
 
-Due to the small nature of Nectar isntance storage you may wish to move the MySQL database onto the partition too. Follow the following steps to do so:
+Due to the small nature of Nectar instance storage you may wish to move the MySQL database onto the partition too. Follow the following steps to do so:
 
 ```
 $ sudo systemctl stop mysql
@@ -177,4 +177,10 @@ $ sudo systemctl restart apparmor
 $ sudo chown -R mysql:mysql /var/lib/mysql
 $ sudo chown -R mysql:mysql /gm_data/mysql
 $ sudo systemctl start mysql
+```
+Additionally, if you are not replicating the database then you should disable the binary-logs for the `my_archive` database to prevent GBs being taken up in replication/recovery logs:
+
+```
+$ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+$ > binlog_ignore_db = my_archive
 ```
