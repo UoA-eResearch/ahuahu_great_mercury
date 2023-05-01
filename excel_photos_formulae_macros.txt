@@ -1,0 +1,29 @@
+Formula for column E (Filename)
+==============================
+=A2&"."&D2
+
+Formula for Column F (Server Location)
+=====================================
+="/gm_data/import/2008/"&E2
+
+
+Formula for Column(s) L (GIS_UNID)
+===================================
+=TEXTJOIN(",",TRUE,L2:X2)
+
+
+Macro for column N (Status)
+===========================
+
+Sub Status_column()
+
+    LR = Range("A" & Rows.Count).End(xlUp).Row
+    For I = 2 To LR
+
+    If Cells(I, 12).Style <> "Normal" Then
+    Cells(I, 14) = 1
+    Else
+    Cells(I, 14) = 4
+    End If
+    Next
+End Sub
