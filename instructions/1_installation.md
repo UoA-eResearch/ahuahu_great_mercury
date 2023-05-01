@@ -162,3 +162,19 @@ $ sudo ln -s /gm_data/import/ /var/www/html/ca/import
 $ sudo chown -R www-data:www-data /gm_data/media/
 $ sudo systemctl restart apache2.service
 ```
+
+Due to the small nature of Nectar isntance storage you may wish to move the MySQL database onto the partition too. Follow the following steps to do so:
+
+```
+$ sudo systemctl stop mysql
+$ mkdir /gm_data/mysql
+$ mv /var/lib/mysql /var/lib/mysql_old
+$ ln -s /gm_data/mysql /var/lib/mysql
+$ mv /var/lib/mysql_old/* /gm_data/mysql/
+$ sudo nano /etc/apparmor.d/tunables/alias
+$ > alias /var/lib/mysql -> /gm_data/mysql,
+$ sudo systemctl restart apparmor
+$ sudo chown -R mysql:mysql /var/lib/mysql
+$ sudo chown -R mysql:mysql /gm_data/mysql
+$ sudo systemctl start mysql
+```
