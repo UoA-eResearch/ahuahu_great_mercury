@@ -45,7 +45,7 @@ Should these be grouped somehow?
 #rock2
 #rock3
 
-Should these just be some kind of "analysed" flag or status?
+I have implemented these by using the "Analysed" type as a CA keyword on the Bone/StoneArtefact models
 #(BoneAnalysed)
 #(StoneArtefactAnalysed)
 
