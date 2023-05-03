@@ -5,6 +5,8 @@ The intructions below are for:
 3) adding relationships between models
 4) changing what the CA UIs display when adding/editing/viewing CA entries (objects, places, etc)
 
+Don't forget to export your CA profile (using the `Manage -> Administration -> Maintenance -> Export Configuration` page) when you make changes to the lists/etadata/UIs/relationships so that you can rebuild the database without redoing the manual effort in the future!
+
 # Adding new Lists (tables) to Collective Access
 
 Instructions can be found here: https://manual.collectiveaccess.org/providence/user/editing/lists_and_vocab.html

@@ -59,3 +59,27 @@ This directory houses any pre-made and custom profiles:
 * `YYYY_MM_DD_profile.xml` are snapshots of profiles while under development
 
 In general the latest profile should be the most up-to-date and recommended to use.
+
+
+# Summary of project work
+
+* Created the https://ca.uoaarchdb.cloud.edu.au Nectar VM instance
+* Configured the VM according to `1_installation.md` instructions using the `configuration_files` folder and profiles in `profiles` folder
+* Went through and documented the process of updating CA in place; see `2_updating_ca.md`
+* Created CA models(schemas) for the broad tables (POI/AOI/Project/Sources/etc) of the ArchDB schema; implemented in the `profiles` folder
+* Created relations for most tables and key metadata such as UNIDs and keywords.
+* Configured UIs for some tables such as projects/media/objects
+* Documented the process of creating new CA tables/metadata/relations/UIs in `2.5_adjusting_profiles.md` and `3_models_metadata_UIs.md`
+* Examples in the existing database (and profiles the `profiles` folders) of how to implement various things / extend to other models
+* Documented the upload/download process for ArchDB data into CA; see `4_import_export_data.md`
+* Created examples of how to upload media data, geospatial metadata, and object metadata; see `mappings` folder
+* Created example project in CA and uploaded the Fayum POIs,AOIs, media+metadata, and arch_objects (via the shapefile data) for ~30K artefacts (Beads through to Coins, around 15% of the "artefact" data.)
+
+### Key things/nuances to remember
+
+* export the profile when you make changes
+* make snapshots at the DB level (and volume and VM level for even more ease!) when experimenting with models/metadata/uploads
+* The ingested data likely needs some curation (object keywords for instance)
+* Be careful whyen uploading data as it is easy to choose the wrong mapping and create lots of bad entries!
+* Your volume needs to be at least ~2.5x the media data you wish to ingest (*due to thumbnails/etc)
+* Access control can be assigned on every UI to a specific role, meaning you can limit who can curate what, and even who can see what objects (or even specific object metadata) exists.
