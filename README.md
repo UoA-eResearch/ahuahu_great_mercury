@@ -78,6 +78,8 @@ In general the latest profile should be the most up-to-date and recommended to u
 ### Key things/nuances to remember
 
 * export the profile when you make changes
+* I implemented a "global_ID"(or idno) which should take the form of "XX_UNID" where "XX" is the project code and "UNID" is the unid. This acts as the DBs unique key for an object.
+* I also implemented a mandatory "UNID" metadata field and optional project relations to store the UNIDs and project codes separately within each object/etc.
 * make snapshots at the DB level (and volume and VM level for even more ease!) when experimenting with models/metadata/uploads
 * The ingested data likely needs some curation (object keywords for instance)
 * Be careful whyen uploading data as it is easy to choose the wrong mapping and create lots of bad entries!
